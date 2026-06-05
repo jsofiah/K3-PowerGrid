@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistem Informasi K3 — PT Power Grid Indonesia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-logo">
+      <img src="img/logo.png" alt="Logo Loader">
+    </div>
+
+    <div class="loader-bar">
+      <div class="loader-progress"></div>
+    </div>
+
+    <div class="loader-text">
+      PT POWER GRID INDONESIA
+    </div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <a class="nav-logo" href="#">
+      <div class="nav-logo-icon">
+        <img src="img/logo.png" alt="Logo Navbar">
+      </div>
+      <div class="nav-logo-text">
+        <span>Power Grid</span>
+      </div>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Beranda</a></li>
+      <li><a href="profil.html">Profil Perusahaan</a></li>
+      <li><a href="hukum.html">Landasan Hukum</a></li>
+      <li><a href="denah.html">Denah Lokasi</a></li>
+      <li><a href="apd_sop.html">APD & SOP</a></li>
+      <li><a href="video.html" class="nav-cta">Video Edukasi</a></li>
+    </ul>
+
+    <div class="nav-burger" id="burger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <section class="hero" id="beranda">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        Sistem Informasi K3
+      </div>
+      <h1 class="hero-title">
+        Keselamatan Kerja
+        <em class="accent">PT Power Grid Indonesia</em>
+      </h1>
+      <p class="hero-subtitle">
+        Mewujudkan lingkungan kerja yang aman, sehat, dan bebas kecelakaan kerja di seluruh jaringan distribusi kelistrikan Indonesia.
+      </p>
+      <div class="hero-actions">
+        <a href="hukum.html" class="btn-primary">
+          <i class="bi bi-shield"></i>
+          Pelajari K3
+        </a>
+        <a href="apd_sop.html" class="btn-outline">
+          <i class="bi bi-check2-square"></i>
+          Lihat SOP
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-card-float card1">
+      <div class="icon-circle" style="background:rgba(239,68,68,.2);">
+        <i class="bi bi-exclamation-triangle"></i>
+      </div>
+      <div>
+        <div style="font-size:.7rem;opacity:.6;margin-bottom:2px;">STATUS KEAMANAN</div>
+        <div style="font-weight:700;">Zero Accident Target</div>
+      </div>
+    </div>
+    <div class="hero-card-float card2">
+      <div class="icon-circle" style="background:rgba(245,197,24,.2);">
+        <i class="bi bi-star"></i>
+      </div>
+      <div>
+        <div style="font-size:.7rem;opacity:.6;margin-bottom:2px;">SERTIFIKASI</div>
+        <div style="font-weight:700;">ISO 45001:2018</div>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat reveal">
+        <div class="hero-stat-num">500+</div>
+        <div class="hero-stat-label">Karyawan Terlatih K3</div>
+      </div>
+      <div class="hero-stat reveal" style="transition-delay:.1s">
+        <div class="hero-stat-num">98%</div>
+        <div class="hero-stat-label">Kepatuhan SOP Kerja</div>
+      </div>
+      <div class="hero-stat reveal" style="transition-delay:.2s">
+        <div class="hero-stat-num">15+</div>
+        <div class="hero-stat-label">Gardu Induk Dikelola</div>
+      </div>
+      <div class="hero-stat reveal" style="transition-delay:.3s">
+        <div class="hero-stat-num">0</div>
+        <div class="hero-stat-label">Target Kecelakaan Fatal</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="profil">
+    <div class="about-inner">
+      <div class="about-image-wrap reveal-left">
+        <img src="img/infrastuktur.jpg" alt="Operasional PT Power Grid" loading="lazy" />
+        <div class="about-image-badge">
+          <span>25+</span>
+          <small>Tahun Beroperasi</small>
+        </div>
+        <div class="about-corner-dot"></div>
+      </div>
+      <div class="about-text reveal-right">
+        <div>
+          <div class="section-label">Tentang Perusahaan</div>
+          <h2 class="section-title">Infrastruktur Listrik <em>Andal &amp; Aman</em></h2>
+          <p class="section-desc" style="max-width:100%">
+            PT Power Grid Indonesia adalah perusahaan terkemuka dalam bidang distribusi dan pemeliharaan infrastruktur kelistrikan nasional. Kami berkomitmen untuk menyediakan pasokan energi listrik yang andal sekaligus menjaga standar keselamatan kerja tertinggi bagi seluruh tenaga kerja kami.
+          </p>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-chip">
+            <i class="bi bi-lightning-charge"></i>
+            Distribusi Listrik
+          </div>
+          <div class="highlight-chip">
+            <i class="bi bi-cpu"></i>
+            Kontrol Otomatis
+          </div>
+          <div class="highlight-chip">
+            <i class="bi bi-shield-check"></i>
+            Sistem K3
+          </div>
+          <div class="highlight-chip">
+            <i class="bi bi-file-text"></i>
+            ISO 45001 Certified
+          </div>
+        </div>
+        <div class="about-cta">
+          <a href="profil.html" class="btn-primary">
+            <i class="bi bi-arrow-right-circle"></i>
+            Selengkapnya
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="risiko" id="risiko">
+    <div class="risiko-header reveal">
+      <div class="section-label">Keselamatan Kerja</div>
+      <h2 class="section-title">Risiko Kerja <em>Utama</em></h2>
+      <p class="section-desc">Kenali dan waspadai potensi bahaya di lingkungan kerja kelistrikan untuk mencegah kecelakaan.</p>
+    </div>
+    <div class="risiko-grid">
+      <div class="risk-card blue reveal" style="transition-delay:.05s">
+        <div class="risk-icon">
+          <i class="bi bi-lightning"></i>
+        </div>
+        <div class="risk-tag">Bahaya Tinggi</div>
+        <div class="risk-title">Sengatan Listrik</div>
+        <p class="risk-desc">Paparan arus listrik langsung dapat menyebabkan luka bakar serius, henti jantung, hingga kematian. Wajib gunakan APD isolasi.</p>
+      </div>
+      <div class="risk-card red reveal" style="transition-delay:.1s">
+        <div class="risk-icon">
+          <i class="bi bi-fire"></i>
+        </div>
+        <div class="risk-tag">Bahaya Kritis</div>
+        <div class="risk-title">Kebakaran</div>
+        <p class="risk-desc">Percikan api dari panel atau kabel rusak berpotensi menyebabkan kebakaran besar. Periksa kondisi kabel dan instalasi secara berkala.</p>
+      </div>
+      <div class="risk-card orange reveal" style="transition-delay:.15s">
+        <div class="risk-icon">
+          <i class="bi bi-arrow-down-up"></i>
+        </div>
+        <div class="risk-tag">Bahaya Serius</div>
+        <div class="risk-title">Jatuh dari Ketinggian</div>
+        <p class="risk-desc">Pekerjaan di tiang listrik dan gardu induk memiliki risiko jatuh yang tinggi. Harness dan prosedur kerja di ketinggian wajib diterapkan.</p>
+      </div>
+      <div class="risk-card yellow reveal" style="transition-delay:.2s">
+        <div class="risk-icon">
+          <i class="bi bi-exclamation-octagon"></i>
+        </div>
+        <div class="risk-tag">Bahaya Sedang</div>
+        <div class="risk-title">Korsleting Listrik</div>
+        <p class="risk-desc">Hubungan arus pendek akibat isolasi rusak atau overload dapat memicu kerusakan peralatan dan bahaya bagi personel di sekitarnya.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="fasilitas" id="fasilitas">
+    <div class="reveal">
+      <div class="section-label">Infrastruktur</div>
+      <h2 class="section-title">Fasilitas <em>Perusahaan</em></h2>
+      <p class="section-desc">Area kerja utama yang dilengkapi standar keselamatan dan sistem pengawasan modern.</p>
+    </div>
+    <div class="fasilitas-grid">
+      <div class="facility-card reveal" style="transition-delay:.05s">
+        <div class="facility-icon">
+          <i class="bi bi-display"></i>
+        </div>
+        <div class="facility-text">
+          <h3>Ruang Kontrol Distribusi</h3>
+          <p>Pusat pemantauan dan pengendalian distribusi energi listrik secara real-time dengan sistem SCADA terintegrasi.</p>
+        </div>
+      </div>
+      <div class="facility-card reveal" style="transition-delay:.1s">
+        <div class="facility-icon">
+          <i class="bi bi-building"></i>
+        </div>
+        <div class="facility-text">
+          <h3>Gardu Induk</h3>
+          <p>Fasilitas transformasi tegangan tinggi ke menengah dengan sistem proteksi berlapis dan area terbatas khusus personel bersertifikat.</p>
+        </div>
+      </div>
+      <div class="facility-card reveal" style="transition-delay:.15s">
+        <div class="facility-icon">
+          <i class="bi bi-grid-3x3-gap-fill"></i>
+        </div>
+        <div class="facility-text">
+          <h3>Ruang Panel Listrik</h3>
+          <p>Panel distribusi tegangan menengah dan rendah dengan akses terkontrol, label bahaya, dan SOP lockout/tagout yang ketat.</p>
+        </div>
+      </div>
+      <div class="facility-card reveal" style="transition-delay:.2s">
+        <div class="facility-icon">
+          <i class="bi bi-box-seam"></i>
+        </div>
+        <div class="facility-text">
+          <h3>Gudang Peralatan</h3>
+          <p>Penyimpanan APD, alat kerja, dan suku cadang dengan sistem inventaris, inspeksi rutin, dan tata letak ergonomis yang aman.</p>
+        </div>
+      </div>
+      <div class="facility-card reveal" style="transition-delay:.25s">
+        <div class="facility-icon">
+          <i class="bi bi-tools"></i>
+        </div>
+        <div class="facility-text">
+          <h3>Area Maintenance</h3>
+          <p>Bengkel perawatan dan perbaikan peralatan kelistrikan dilengkapi sistem grounding, ventilasi memadai, dan zona kerja aman.</p>
+        </div>
+      </div>
+      <div class="facility-card reveal" style="transition-delay:.3s">
+        <div class="facility-icon">
+          <i class="bi bi-building"></i>
+        </div>
+        <div class="facility-text">
+          <h3>Kantor Administrasi</h3>
+          <p>Pusat koordinasi administrasi K3, dokumentasi, dan pelaporan insiden yang terintegrasi dengan sistem manajemen keselamatan perusahaan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="safety-banner">
+    <div class="safety-banner-inner">
+      <div class="safety-banner-text reveal-left">
+        <h2>Keselamatan adalah Prioritas Utama Kami</h2>
+        <p>Pelajari standar K3 dan prosedur kerja aman yang wajib diterapkan di seluruh area operasional.</p>
+      </div>
+      <div class="safety-banner-actions reveal-right">
+        <a href="apd_sop.html" class="btn-white">
+          <i class="bi bi-shield-shaded"></i>
+          Lihat APD &amp; SOP
+        </a>
+        <a href="video.html" class="btn-ghost-white">
+          <i class="bi bi-play-circle"></i>
+          Video Edukasi
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-logo">
+          <div class="icon-wrap">
+            <img src="img/logo.png" alt="Logo Loader">
+          </div>
+          <div class="footer-brand-name">
+            PT Power Grid Indonesia
+            <small>Sistem Informasi K3</small>
+          </div>
+        </div>
+        <p class="footer-tagline">
+          Berkomitmen mewujudkan lingkungan kerja yang aman, sehat, dan produktif di seluruh jaringan infrastruktur kelistrikan nasional.
+        </p>
+        <div class="footer-socials">
+          <div class="social-btn">
+            <i class="bi bi-twitter-x"></i>
+          </div>
+          <div class="social-btn">
+            <i class="bi bi-linkedin"></i>
+          </div>
+          <div class="social-btn">
+            <i class="bi bi-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigasi</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="profil.html">Profil Perusahaan</a></li>
+          <li><a href="hukum.html">Landasan Hukum</a></li>
+          <li><a href="denah.html">Denah Lokasi</a></li>
+          <li><a href="apd_sop.html">APD &amp; SOP</a></li>
+          <li><a href="video.html">Video Edukasi</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontak Perusahaan</h4>
+        <div class="contact-items">
+          <div class="contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <p><strong>Alamat</strong>Jl. Candi Raya No. 45, Kawasan Industri Malang, Jawa Timur 65123</p>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <p><strong>Telepon</strong>+62 341 5555 6789</p>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <p><strong>Email</strong>k3@powergrid.co.id</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> PT Power Grid Indonesia. Seluruh hak cipta dilindungi undang-undang.</p>
+    </div>
+  </footer>
+  <script>
+    // Set current year dynamically
+    document.getElementById('currentYear').innerText = new Date().getFullYear();
+
+    // Placeholder for toggleMenu function if not exists in index.js
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      if (navLinks) {
+        navLinks.classList.toggle('active');
+      }
+    }
+  </script>
+  <script src="script/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

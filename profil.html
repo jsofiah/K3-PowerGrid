@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Perusahaan — PT Power Grid Indonesia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style/index.css" />
+  <link rel="stylesheet" href="style/profil.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+      <a class="nav-logo" href="index.html">
+        <div class="nav-logo-icon">
+          <img src="img/logo.png" alt="Logo Navbar">
+        </div>
+        <div class="nav-logo-text">
+          <span>Power Grid</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profil.html" class="active">Profil Perusahaan</a></li>
+        <li><a href="hukum.html">Landasan Hukum</a></li>
+        <li><a href="denah.html">Denah Lokasi</a></li>
+        <li><a href="apd_sop.html">APD & SOP</a></li>
+        <li><a href="video.html" class="nav-cta">Video Edukasi</a></li>
+      </ul>
+
+      <div class="nav-burger" id="burger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  </nav>
+
+  <header class="page-header">
+      <div class="page-header-bg"></div>
+      <div class="page-header-deco"></div>
+      <div class="page-header-content">
+        <div class="breadcrumb">
+          <a href="index.html">Beranda</a>
+          <i class="bi bi-chevron-right"></i>
+          <span>Profil Perusahaan</span>
+        </div>
+        <div class="page-header-badge">
+          <i class="bi bi-building"></i>
+          Profil Perusahaan
+        </div>
+        <h1 class="page-header-title">
+          PT Power Grid<br>
+          <em>Indonesia</em>
+        </h1>
+        <p class="page-header-desc">
+          Perusahaan terdepan dalam distribusi dan pemeliharaan infrastruktur kelistrikan nasional dengan standar keselamatan kerja kelas dunia.
+        </p>
+        <div class="header-chips">
+          <div class="header-chip yellow-chip">
+            <i class="bi bi-shield-check"></i>
+            ISO 45001:2018
+          </div>
+          <div class="header-chip">
+            <i class="bi bi-calendar"></i>
+            Berdiri sejak 1999
+          </div>
+          <div class="header-chip">
+            <i class="bi bi-people"></i>
+            500+ Karyawan
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <section class="tentang" id="tentang">
+      <div class="reveal" style="margin-bottom:40px;">
+        <div class="section-label">Tentang Kami</div>
+        <h2 class="section-title">Mengenal <em>PT Power Grid Indonesia</em></h2>
+        <p class="section-desc">Dedikasi lebih dari dua dekade dalam membangun infrastruktur kelistrikan yang andal dan aman bagi masyarakat Indonesia.</p>
+      </div>
+
+      <div class="tentang-card reveal">
+        <div class="tentang-card-deco">
+          <i class="bi bi-lightning-charge-fill"></i>
+        </div>
+        <div class="tentang-card-inner">
+          <div class="tentang-card-left">
+            <div>
+              <div class="company-logo-row">
+                <div class="company-logo-wrap">
+                  <i class="bi bi-lightning-charge-fill"></i>
+                </div>
+                <div class="company-name-block">
+                  <h2>PT Power Grid Indonesia</h2>
+                  <p>Sistem Informasi K3 · Malang, Jawa Timur</p>
+                </div>
+              </div>
+              <p class="company-desc">
+                PT Power Grid Indonesia adalah perusahaan nasional yang bergerak di bidang distribusi energi listrik, pemeliharaan gardu induk, dan pembangunan infrastruktur kelistrikan skala besar. Didirikan pada tahun 1999, kami telah melayani jutaan pelanggan di seluruh wilayah Jawa Timur dengan komitmen kuat terhadap keandalan pasokan dan keselamatan kerja.
+              </p>
+              <p class="company-desc" style="margin-top:14px;">
+                Sebagai perusahaan kelistrikan yang bersertifikasi ISO 45001:2018, kami menempatkan Keselamatan dan Kesehatan Kerja (K3) sebagai fondasi dalam setiap operasional. Seluruh tenaga kerja kami terlatih dan dilengkapi dengan standar perlindungan tertinggi di industri kelistrikan.
+              </p>
+            </div>
+            <div class="company-tags">
+              <span class="company-tag highlight">ISO 45001:2018</span>
+              <span class="company-tag">SNI IEC 61936</span>
+              <span class="company-tag">OHSAS 18001</span>
+              <span class="company-tag">PLN Certified</span>
+              <span class="company-tag">K3 Listrik</span>
+            </div>
+          </div>
+          <div class="tentang-card-right">
+            <div class="vm-block">
+              <div class="vm-item visi">
+                <div class="vm-label">Visi Perusahaan</div>
+                <p class="vm-text">
+                  Menjadi perusahaan infrastruktur kelistrikan terpercaya di Indonesia yang mengutamakan keselamatan, keandalan, dan keberlanjutan dalam setiap aspek operasional demi mendukung kemajuan bangsa.
+                </p>
+              </div>
+              <div class="vm-item misi">
+                <div class="vm-label">Misi Perusahaan</div>
+                <p class="vm-text">
+                  Mengoperasikan dan memelihara jaringan distribusi listrik berstandar tinggi, menerapkan sistem K3 secara konsisten, mengembangkan kompetensi SDM, dan berkontribusi aktif bagi pertumbuhan infrastruktur energi nasional.
+                </p>
+              </div>
+            </div>
+            <div class="vm-item" style="background:rgba(245,197,24,.08);border-color:rgba(245,197,24,.2);">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
+                <i class="bi bi-shield-shaded" style="color:var(--yellow);"></i>
+                <span style="font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--yellow);">Nilai Utama K3</span>
+              </div>
+              <p class="vm-text" style="color:rgba(255,255,255,.65);">
+                <strong style="color:rgba(255,255,255,.85);">Safety First</strong> — Tidak ada pekerjaan yang begitu mendesak sehingga tidak ada waktu untuk melakukannya dengan selamat. Keselamatan adalah tanggung jawab setiap individu.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="company-stats">
+          <div class="company-stat">
+            <div class="company-stat-num">25+</div>
+            <div class="company-stat-label">Tahun Beroperasi</div>
+          </div>
+          <div class="company-stat">
+            <div class="company-stat-num">500+</div>
+            <div class="company-stat-label">Karyawan Aktif</div>
+          </div>
+          <div class="company-stat">
+            <div class="company-stat-num">15</div>
+            <div class="company-stat-label">Gardu Induk Dikelola</div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="operasional" id="operasional">
+      <div class="operasional-header reveal">
+        <div class="section-label">Bidang Operasional</div>
+        <h2 class="section-title">Ruang Lingkup <em>Kegiatan Usaha</em></h2>
+        <p class="section-desc">Empat bidang operasional utama yang dijalankan PT Power Grid Indonesia dengan standar teknis dan keselamatan tertinggi.</p>
+      </div>
+
+      <div class="ops-grid">
+        <div class="ops-card reveal" style="transition-delay:.05s">
+          <div class="ops-card-top">
+            <img src="img/distribusi.jpg" alt="Distribusi Listrik" loading="lazy"/>
+            <div class="ops-card-top-overlay"></div>
+            <div class="ops-card-number">01</div>
+            <div class="ops-icon-float" style="background:linear-gradient(135deg,var(--blue),var(--mid));">
+              <i class="bi bi-lightning-charge-fill"></i>
+            </div>
+          </div>
+          <div class="ops-card-body">
+            <h3 class="ops-card-title">Distribusi Listrik</h3>
+            <p class="ops-card-desc">Pengelolaan dan pengoperasian jaringan distribusi tegangan menengah (20 kV) dan tegangan rendah (380/220 V) untuk melayani kebutuhan listrik rumah tangga, industri, dan komersial.</p>
+            <div class="ops-card-features">
+              <div class="ops-feature">Jaringan distribusi 20 kV &amp; 380/220 V</div>
+              <div class="ops-feature">Monitoring beban dan kualitas daya</div>
+              <div class="ops-feature">Penanganan gangguan 24/7</div>
+            </div>
+            <div class="ops-card-tag">
+              <span class="ops-tag-label">Distribusi Energi</span>
+              <div class="ops-arrow">
+                <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ops-card reveal" style="transition-delay:.1s">
+          <div class="ops-card-top">
+            <img src="img/gardu_induk.jpeg" alt="Gardu Induk" loading="lazy"/>
+            <div class="ops-card-top-overlay"></div>
+            <div class="ops-card-number">02</div>
+            <div class="ops-icon-float" style="background:linear-gradient(135deg,#F59E0B,#F5C518);">
+              <i class="bi bi-building"></i>
+            </div>
+          </div>
+          <div class="ops-card-body">
+            <h3 class="ops-card-title">Pemeliharaan Gardu Induk</h3>
+            <p class="ops-card-desc">Inspeksi berkala, perbaikan, dan perawatan preventif seluruh komponen gardu induk meliputi transformator daya, switchgear, proteksi rele, dan sistem grounding sesuai standar PLN.</p>
+            <div class="ops-card-features">
+              <div class="ops-feature">Pemeliharaan transformator &amp; switchgear</div>
+              <div class="ops-feature">Kalibrasi rele proteksi</div>
+              <div class="ops-feature">Inspeksi sistem grounding</div>
+            </div>
+            <div class="ops-card-tag">
+              <span class="ops-tag-label">Maintenance GI</span>
+              <div class="ops-arrow">
+                <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ops-card reveal" style="transition-delay:.15s">
+          <div class="ops-card-top">
+            <img src="img/infrastuktur.jpg" alt="Infrastruktur Kelistrikan" loading="lazy"/>
+            <div class="ops-card-top-overlay"></div>
+            <div class="ops-card-number">03</div>
+            <div class="ops-icon-float" style="background:linear-gradient(135deg,#0F766E,#14B8A6);">
+              <i class="bi bi-diagram-3"></i>
+            </div>
+          </div>
+          <div class="ops-card-body">
+            <h3 class="ops-card-title">Infrastruktur Kelistrikan</h3>
+            <p class="ops-card-desc">Perencanaan, pembangunan, dan pengembangan jaringan transmisi baru, penggantian jaringan usang, serta pemasangan tiang listrik dan kabel bawah tanah sesuai kebutuhan beban.</p>
+            <div class="ops-card-features">
+              <div class="ops-feature">Pembangunan jaringan transmisi baru</div>
+              <div class="ops-feature">Pemasangan kabel bawah tanah</div>
+              <div class="ops-feature">Pengembangan kapasitas distribusi</div>
+            </div>
+            <div class="ops-card-tag">
+              <span class="ops-tag-label">Konstruksi &amp; Infrastruktur</span>
+              <div class="ops-arrow">
+                <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ops-card reveal" style="transition-delay:.2s">
+          <div class="ops-card-top">
+            <img src="img/sistem_kontrol.jpg" alt="Sistem Kontrol Otomatis" loading="lazy"/>
+            <div class="ops-card-top-overlay"></div>
+            <div class="ops-card-number">04</div>
+            <div class="ops-icon-float" style="background:linear-gradient(135deg,#7C3AED,#A78BFA);">
+              <i class="bi bi-cpu"></i>
+            </div>
+          </div>
+          <div class="ops-card-body">
+            <h3 class="ops-card-title">Sistem Kontrol Otomatis</h3>
+            <p class="ops-card-desc">Implementasi dan operasional sistem SCADA (Supervisory Control and Data Acquisition) untuk pemantauan jaringan secara real-time, deteksi gangguan otomatis, dan manuver jaringan dari jarak jauh.</p>
+            <div class="ops-card-features">
+              <div class="ops-feature">Sistem SCADA terintegrasi</div>
+              <div class="ops-feature">Remote terminal unit (RTU)</div>
+              <div class="ops-feature">Automatic fault detection</div>
+            </div>
+            <div class="ops-card-tag">
+              <span class="ops-tag-label">Otomasi &amp; SCADA</span>
+              <div class="ops-arrow">
+                <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="risiko" id="risiko">
+      <div class="risiko-header">
+        <div class="reveal">
+          <div class="section-label">Keselamatan Kerja</div>
+          <h2 class="section-title">Potensi Risiko <em>Kerja Utama</em></h2>
+          <p class="section-desc">Identifikasi dan pemahaman risiko adalah langkah pertama menuju tempat kerja yang aman dan bebas kecelakaan.</p>
+        </div>
+        <div class="risiko-header-right reveal" style="transition-delay:.1s">
+          <div class="risk-overview-pill">
+            <i class="bi bi-exclamation-triangle-fill"></i>
+            4 Risiko Teridentifikasi
+          </div>
+        </div>
+      </div>
+
+      <div class="risiko-grid">
+        
+        <div class="risk-card electro reveal" style="transition-delay:.05s">
+          <div class="risk-card-bg"></div>
+          <div class="risk-card-inner">
+            <div class="risk-severity-bar"><div class="risk-severity-fill"></div></div>
+            <div class="risk-card-header">
+              <div class="risk-icon-wrap">
+                <i class="bi bi-lightning-charge-fill"></i>
+              </div>
+              <span class="risk-level-badge">KRITIS — 95%</span>
+            </div>
+            <h3 class="risk-card-title">Sengatan Listrik</h3>
+            <p class="risk-card-desc">Paparan arus listrik langsung akibat kontak dengan konduktor bertegangan dapat menyebabkan luka bakar serius, gangguan irama jantung, kerusakan jaringan saraf, hingga kematian.</p>
+            <div class="risk-details">
+              <div class="risk-detail-row">
+                <i class="bi bi-info-circle-fill"></i>
+                <span><strong>Sumber Bahaya:</strong> Konduktor aktif, panel tegangan tinggi, kabel telanjang, busur listrik (arc flash)</span>
+              </div>
+              <div class="risk-detail-row">
+                <i class="bi bi-shield-check"></i>
+                <span><strong>Pencegahan:</strong> Lockout/Tagout (LOTO), penggunaan sarung tangan isolasi 1000V, safety grounding</span>
+              </div>
+            </div>
+            <div class="risk-card-footer">
+              <div class="risk-apd"><strong>APD Wajib:</strong> Sarung tangan isolasi, helm ARC flash, sepatu safety</div>
+              <a class="risk-learn" href="apd_sop.html">Detail <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="risk-card fire reveal" style="transition-delay:.1s">
+          <div class="risk-card-bg"></div>
+          <div class="risk-card-inner">
+            <div class="risk-severity-bar"><div class="risk-severity-fill"></div></div>
+            <div class="risk-card-header">
+              <div class="risk-icon-wrap">
+                <i class="bi bi-fire"></i>
+              </div>
+              <span class="risk-level-badge">TINGGI — 85%</span>
+            </div>
+            <h3 class="risk-card-title">Kebakaran</h3>
+            <p class="risk-card-desc">Percikan api dari peralatan listrik, overheating transformator, korsleting panel, atau kebocoran minyak isolasi dapat memicu kebakaran yang sulit dikendalikan di area kelistrikan.</p>
+            <div class="risk-details">
+              <div class="risk-detail-row">
+                <i class="bi bi-info-circle-fill"></i>
+                <span><strong>Sumber Bahaya:</strong> Overload kabel, transformator overheat, kebocoran minyak isolasi, percikan busur listrik</span>
+              </div>
+              <div class="risk-detail-row">
+                <i class="bi bi-shield-check"></i>
+                <span><strong>Pencegahan:</strong> Pemeriksaan rutin kabel, APAR CO₂, detektor asap, sistem fire suppression otomatis</span>
+              </div>
+            </div>
+            <div class="risk-card-footer">
+              <div class="risk-apd"><strong>APD Wajib:</strong> Pakaian tahan api, helm, SCBA untuk asap</div>
+              <a class="risk-learn" href="apd_sop.html">Detail <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="risk-card fall reveal" style="transition-delay:.15s">
+          <div class="risk-card-bg"></div>
+          <div class="risk-card-inner">
+            <div class="risk-severity-bar"><div class="risk-severity-fill"></div></div>
+            <div class="risk-card-header">
+              <div class="risk-icon-wrap">
+                <i class="bi bi-arrow-down-up"></i>
+              </div>
+              <span class="risk-level-badge">SERIUS — 75%</span>
+            </div>
+            <h3 class="risk-card-title">Jatuh dari Ketinggian</h3>
+            <p class="risk-card-desc">Pekerjaan pada tiang listrik, gardu induk, dan jaringan transmisi di ketinggian lebih dari 2 meter mengandung risiko jatuh yang berpotensi fatal jika tanpa pengaman yang memadai.</p>
+            <div class="risk-details">
+              <div class="risk-detail-row">
+                <i class="bi bi-info-circle-fill"></i>
+                <span><strong>Sumber Bahaya:</strong> Tiang listrik, tangga, platform gardu induk, kondisi licin saat hujan atau angin kencang</span>
+              </div>
+              <div class="risk-detail-row">
+                <i class="bi bi-shield-check"></i>
+                <span><strong>Pencegahan:</strong> Full body harness, anchor point tersertifikasi, JSA kerja di ketinggian, scaffolding standar</span>
+              </div>
+            </div>
+            <div class="risk-card-footer">
+              <div class="risk-apd"><strong>APD Wajib:</strong> Full body harness, helm safety, sepatu anti-slip</div>
+              <a class="risk-learn" href="apd_sop.html">Detail <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="risk-card emf reveal" style="transition-delay:.2s">
+          <div class="risk-card-bg"></div>
+          <div class="risk-card-inner">
+            <div class="risk-severity-bar"><div class="risk-severity-fill"></div></div>
+            <div class="risk-card-header">
+              <div class="risk-icon-wrap">
+                <i class="bi bi-wifi"></i>
+              </div>
+              <span class="risk-level-badge">SEDANG — 65%</span>
+            </div>
+            <h3 class="risk-card-title">Medan Elektromagnetik</h3>
+            <p class="risk-card-desc">Paparan medan elektromagnetik (EMF) frekuensi rendah yang berkepanjangan di sekitar jaringan tegangan tinggi dan transformator daya berpotensi menimbulkan gangguan kesehatan jangka panjang.</p>
+            <div class="risk-details">
+              <div class="risk-detail-row">
+                <i class="bi bi-info-circle-fill"></i>
+                <span><strong>Sumber Bahaya:</strong> Transformator daya besar, saluran udara tegangan tinggi (SUTET), reaktor, busbar GIS</span>
+              </div>
+              <div class="risk-detail-row">
+                <i class="bi bi-shield-check"></i>
+                <span><strong>Pencegahan:</strong> Batasi durasi paparan, jaga jarak aman, pemantauan EMF berkala dengan gaussmeter</span>
+              </div>
+            </div>
+            <div class="risk-card-footer">
+              <div class="risk-apd"><strong>APD Wajib:</strong> Baju faraday, monitoring dosimeter EMF</div>
+              <a class="risk-learn" href="apd_sop.html">Detail <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="k3-penting" id="k3-penting">
+      <div class="k3-penting-header reveal">
+        <div class="section-label">Sistem K3</div>
+        <h2 class="section-title">Mengapa K3 <em>Sangat Penting?</em></h2>
+        <p class="section-desc">Sistem Manajemen K3 bukan sekadar kewajiban hukum — ini adalah investasi nyata dalam keberlangsungan dan produktivitas perusahaan.</p>
+      </div>
+
+      <div class="k3-info-banner reveal">
+        <div class="k3-info-icon">
+          <i class="bi bi-shield-shaded"></i>
+        </div>
+        <div class="k3-info-text">
+          <h3>Industri kelistrikan termasuk sektor dengan risiko kecelakaan kerja tertinggi di Indonesia</h3>
+          <p>Berdasarkan data Kementerian Ketenagakerjaan RI, sektor energi dan kelistrikan konsisten berada dalam 5 besar industri dengan angka kecelakaan kerja tertinggi. Implementasi sistem K3 yang baik dapat menurunkan risiko kecelakaan hingga 80%.</p>
+        </div>
+      </div>
+
+      <div class="k3-infographic">
+        <div class="k3-card reveal" style="transition-delay:.05s">
+          <div class="k3-card-number">01</div>
+          <div class="k3-card-icon">
+            <i class="bi bi-heart-pulse"></i>
+          </div>
+          <h3 class="k3-card-title">Melindungi Keselamatan Jiwa</h3>
+          <p class="k3-card-desc">Sistem K3 yang baik mencegah kecelakaan fatal di area kerja bertegangan tinggi. Setiap prosedur dirancang untuk mengeliminasi atau meminimalkan paparan bahaya listrik.</p>
+          <div class="k3-card-stat">
+            <div class="k3-stat-num">80%</div>
+            <div class="k3-stat-label">Penurunan risiko kecelakaan dengan K3 terstandar</div>
+          </div>
+        </div>
+
+        <div class="k3-card reveal" style="transition-delay:.1s">
+          <div class="k3-card-number">02</div>
+          <div class="k3-card-icon">
+            <i class="bi bi-file-text"></i>
+          </div>
+          <h3 class="k3-card-title">Kepatuhan Regulasi &amp; Hukum</h3>
+          <p class="k3-card-desc">Mematuhi UU No. 1 Tahun 1970 tentang Keselamatan Kerja dan Permenaker K3 Listrik. Pelanggaran dapat berakibat sanksi pidana, denda, dan pencabutan izin operasional.</p>
+          <div class="k3-card-stat">
+            <div class="k3-stat-num">100%</div>
+            <div class="k3-stat-label">Kepatuhan audit K3 selama 3 tahun terakhir</div>
+          </div>
+        </div>
+
+        <div class="k3-card reveal" style="transition-delay:.15s">
+          <div class="k3-card-number">03</div>
+          <div class="k3-card-icon">
+            <i class="bi bi-graph-up"></i>
+          </div>
+          <h3 class="k3-card-title">Efisiensi Biaya Operasional</h3>
+          <p class="k3-card-desc">Investasi K3 jauh lebih murah dibanding biaya kecelakaan kerja (kompensasi, perbaikan alat, kerugian produksi). Tiap Rp 1 yang diinvestasikan K3 berpotensi hemat Rp 5–10.</p>
+          <div class="k3-card-stat">
+            <div class="k3-stat-num">5×</div>
+            <div class="k3-stat-label">ROI rata-rata investasi program K3</div>
+          </div>
+        </div>
+
+        <div class="k3-card reveal" style="transition-delay:.2s">
+          <div class="k3-card-number">04</div>
+          <div class="k3-card-icon">
+            <i class="bi bi-people"></i>
+          </div>
+          <h3 class="k3-card-title">Produktivitas &amp; Motivasi SDM</h3>
+          <p class="k3-card-desc">Pekerja yang merasa aman lebih produktif, memiliki tingkat absensi lebih rendah, dan loyalitas lebih tinggi. Budaya K3 positif membangun kepercayaan dan kepuasan kerja karyawan.</p>
+          <div class="k3-card-stat">
+            <div class="k3-stat-num">35%</div>
+            <div class="k3-stat-label">Peningkatan produktivitas dengan budaya K3 kuat</div>
+          </div>
+        </div>
+
+        <div class="k3-card reveal" style="transition-delay:.25s">
+          <div class="k3-card-number">05</div>
+          <div class="k3-card-icon">
+            <i class="bi bi-globe"></i>
+          </div>
+          <h3 class="k3-card-title">Reputasi &amp; Kepercayaan Publik</h3>
+          <p class="k3-card-desc">Rekam jejak K3 yang baik meningkatkan kepercayaan mitra, pelanggan, investor, dan regulator. Sertifikasi K3 internasional menjadi keunggulan kompetitif dalam tender proyek besar.</p>
+          <div class="k3-card-stat">
+            <div class="k3-stat-num">A+</div>
+            <div class="k3-stat-label">Rating K3 dari Kementerian Ketenagakerjaan</div>
+          </div>
+        </div>
+
+        <div class="k3-card reveal" style="transition-delay:.3s">
+          <div class="k3-card-number">06</div>
+          <div class="k3-card-icon">
+            <i class="bi bi-hourglass-split"></i>
+          </div>
+          <h3 class="k3-card-title">Keberlangsungan Operasi</h3>
+          <p class="k3-card-desc">Insiden kecelakaan kerja berpotensi menghentikan operasi distribusi listrik dan merugikan jutaan pelanggan. K3 menjamin keberlangsungan layanan dan keandalan pasokan energi.</p>
+          <div class="k3-card-stat">
+            <div class="k3-stat-num">99.9%</div>
+            <div class="k3-stat-label">Uptime operasi dengan manajemen K3 terstandar</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="k3-highlight-row reveal">
+        <div class="k3-highlight">
+          <div class="k3-highlight-num">500+</div>
+          <div class="k3-highlight-label">Personel Tersertifikasi K3</div>
+        </div>
+        <div class="k3-highlight">
+          <div class="k3-highlight-num">12×</div>
+          <div class="k3-highlight-label">Pelatihan K3 per Tahun</div>
+        </div>
+        <div class="k3-highlight">
+          <div class="k3-highlight-num">Zero</div>
+          <div class="k3-highlight-label">Target Kecelakaan Fatal</div>
+        </div>
+        <div class="k3-highlight">
+          <div class="k3-highlight-num">ISO</div>
+          <div class="k3-highlight-label">45001:2018 Tersertifikasi</div>
+        </div>
+      </div>
+  </section>
+
+  <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo">
+            <div class="icon-wrap">
+              <img src="img/logo.png" alt="Logo Loader">
+            </div>
+            <div class="footer-brand-name">
+              PT Power Grid Indonesia
+              <small>Sistem Informasi K3</small>
+            </div>
+          </div>
+          <p class="footer-tagline">Berkomitmen mewujudkan lingkungan kerja yang aman, sehat, dan produktif di seluruh jaringan infrastruktur kelistrikan nasional.</p>
+          <div class="footer-socials">
+            <div class="social-btn"><i class="bi bi-twitter-x"></i></div>
+            <div class="social-btn"><i class="bi bi-linkedin"></i></div>
+            <div class="social-btn"><i class="bi bi-youtube"></i></div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil Perusahaan</a></li>
+            <li><a href="hukum.html">Landasan Hukum</a></li>
+            <li><a href="denah.html">Denah Lokasi</a></li>
+            <li><a href="apd_sop.html">APD &amp; SOP</a></li>
+            <li><a href="video.html">Video Edukasi</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontak Perusahaan</h4>
+          <div class="contact-items">
+            <div class="contact-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <p><strong>Alamat</strong>Jl. Candi Raya No. 45, Kawasan Industri Malang, Jawa Timur 65123</p>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-telephone-fill"></i>
+              <p><strong>Telepon</strong>+62 341 5555 6789</p>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-envelope-fill"></i>
+              <p><strong>Email</strong>k3@powergrid.co.id</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> PT Power Grid Indonesia. Seluruh hak cipta dilindungi undang-undang.</p>
+      </div>
+  </footer>
+
+  <script>
+      // Set current year dynamically
+      document.getElementById('currentYear').innerText = new Date().getFullYear();
+
+      // Sticky navbar
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 20);
+      });
+
+      // Mobile menu
+      function toggleMenu() {
+        document.getElementById('navLinks').classList.toggle('open');
+      }
+      document.querySelectorAll('.nav-links a').forEach(a => {
+        a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+      });
+
+      // Scroll reveal
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+
+      // Animate severity bars on reveal
+      const barObserver = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.querySelectorAll('.risk-severity-fill').forEach(bar => {
+              bar.style.width = bar.parentElement.closest('.risk-card.electro') ? '95%'
+                : bar.parentElement.closest('.risk-card.fire') ? '85%'
+                : bar.parentElement.closest('.risk-card.fall') ? '75%'
+                : '65%';
+            });
+          }
+        });
+      }, { threshold: 0.3 });
+      const risikoGrid = document.querySelector('.risiko-grid');
+      if (risikoGrid) barObserver.observe(risikoGrid);
+
+      // Counter animation for stats
+      function animateCount(el, target, suffix = '') {
+        let start = null;
+        const dur = 1600;
+        const isNum = !isNaN(target);
+        const step = ts => {
+          if (!start) start = ts;
+          const p = Math.min((ts - start) / dur, 1);
+          const ease = 1 - Math.pow(1 - p, 3);
+          el.textContent = (isNum ? Math.floor(ease * target) : target) + suffix;
+          if (p < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      }
+
+      const statsObs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.querySelectorAll('.company-stat-num').forEach((el, i) => {
+              const targets = [25, 500, 15];
+              const suffixes = ['+', '+', ''];
+              if (targets[i] !== undefined) animateCount(el, targets[i], suffixes[i]);
+            });
+            statsObs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.4 });
+      const statsEl = document.querySelector('.company-stats');
+      if (statsEl) statsObs.observe(statsEl);
+  </script>
+</body>
+</html>
