@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APD & SOP — PT Power Grid Indonesia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style/index.css" />
+  <link rel="stylesheet" href="style/apd_sop.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <a class="nav-logo" href="index.html">
+      <div class="nav-logo-icon">
+        <img src="img/logo.png" alt="Logo Navbar">
+      </div>
+      <div class="nav-logo-text">
+        <span>Power Grid</span>
+      </div>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="profil.html">Profil Perusahaan</a></li>
+      <li><a href="hukum.html">Landasan Hukum</a></li>
+      <li><a href="denah.html">Denah Lokasi</a></li>
+      <li><a href="apd_sop.html" class="active">APD & SOP</a></li>
+      <li><a href="video.html" class="nav-cta">Video Edukasi</a></li>
+    </ul>
+
+    <div class="nav-burger" id="burger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="page-header-bg"></div>
+    <div class="page-header-content">
+      <div class="breadcrumb">
+        <a href="index.html">Beranda</a>
+        <i class="bi bi-chevron-right"></i>
+        <span>APD &amp; SOP</span>
+      </div>
+      <div class="page-header-badge">
+        <i class="bi bi-shield-check"></i>
+        Keselamatan Kerja
+      </div>
+      <h1 class="page-header-title">APD &amp; <em>SOP Kerja Aman</em></h1>
+      <p class="page-header-desc">Alat Pelindung Diri dan Standar Operasional Prosedur yang wajib dipahami dan diterapkan oleh seluruh tenaga kerja PT Power Grid Indonesia.</p>
+      <div class="header-chips">
+        <div class="header-chip yc"><i class="bi bi-shield"></i> 8 Jenis APD</div>
+        <div class="header-chip"><i class="bi bi-file-text"></i> 5 SOP Area Kerja</div>
+        <div class="header-chip"><i class="bi bi-award"></i> ISO 45001:2018</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- TAB SECTION -->
+  <div class="tab-section">
+    <div class="tab-wrapper">
+
+      <!-- Tab Navigation -->
+      <div class="tab-nav-outer">
+        <div class="tab-nav">
+          <button class="tab-btn active" onclick="switchTab('apd',this)">
+            <i class="bi bi-shield"></i>
+            Alat Pelindung Diri (APD)
+            <span class="tab-count">8</span>
+          </button>
+          <button class="tab-btn" onclick="switchTab('sop',this)">
+            <i class="bi bi-file-text"></i>
+            Standar Operasional Prosedur (SOP)
+            <span class="tab-count">5</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Tab Content -->
+      <div class="tab-content">
+
+        <!-- PANEL APD -->
+        <div class="tab-panel active" id="panel-apd">
+          <div class="apd-header reveal">
+            <div class="section-label">Perlengkapan K3</div>
+            <h2 class="section-title">Alat Pelindung Diri <em>Wajib</em></h2>
+            <p class="section-desc">Setiap personel wajib menggunakan APD yang sesuai dengan area kerja dan jenis pekerjaan yang dilakukan. Penggunaan APD yang tidak tepat sama berbahayanya dengan tidak memakai APD sama sekali.</p>
+          </div>
+
+          <div class="apd-grid">
+
+            <!-- 1. Helm Listrik -->
+            <div class="apd-card c1 reveal" style="transition-delay:.04s">
+              <div class="apd-illus">
+                <div class="apd-illus-bg"></div>
+                <div class="apd-glow"></div>
+                <div class="apd-svg-wrap">
+                  <img src="img/apd/helm-listrik.png" alt="Helm Listrik">
+                </div>
+                <div class="apd-illus-num">01</div>
+              </div>
+              <div class="apd-body">
+                <div class="apd-badge">Kelas E</div>
+                <h3 class="apd-name">Helm Listrik</h3>
+                <p class="apd-fungsi">Melindungi kepala dari benturan benda keras dan sengatan listrik hingga 20.000 V. Terbuat dari bahan non-konduktif bersertifikat ANSI Z89.1 Kelas E.</p>
+                <div class="apd-area"><i class="bi bi-geo-alt"></i> Semua area operasional</div>
+              </div>
+            </div>
+
+            <!-- 2. Sarung Tangan Isolasi -->
+            <div class="apd-card c2 reveal" style="transition-delay:.07s">
+              <div class="apd-illus">
+                <div class="apd-illus-bg"></div>
+                <div class="apd-glow"></div>
+                <div class="apd-svg-wrap">
+                  <img src="img/apd/sarung-tangan-isolasi.png" alt="Sarung Tangan Isolasi">
+                </div>
+                <div class="apd-illus-num">02</div>
+              </div>
+              <div class="apd-body">
+                <div class="apd-badge">1000V</div>
+                <h3 class="apd-name">Sarung Tangan Isolasi</h3>
+                <p class="apd-fungsi">Melindungi tangan dari sengatan listrik saat bekerja pada instalasi bertegangan. Terbuat dari karet isolasi kelas 0 (hingga 1000V) atau kelas lebih tinggi.</p>
+                <div class="apd-area"><i class="bi bi-lightning-charge"></i> Panel listrik, gardu induk</div>
+              </div>
+            </div>
+
+            <!-- 3. Sepatu Safety -->
+            <div class="apd-card c3 reveal" style="transition-delay:.10s">
+              <div class="apd-illus">
+                <div class="apd-illus-bg"></div>
+                <div class="apd-glow"></div>
+                <div class="apd-svg-wrap">
+                  <img src="img/apd/sepatu-safety.png" alt="Sepatu Safety">
+                </div>
+                <div class="apd-illus-num">03</div>
+              </div>
+              <div class="apd-body">
+                <div class="apd-badge">Anti-Static</div>
+                <h3 class="apd-name">Sepatu Safety</h3>
+                <p class="apd-fungsi">Melindungi kaki dari tertimpa benda berat (toe cap baja) dan sengatan listrik (anti-static). Memenuhi standar SNI 7037:2009 dan IEC 61340-5-1.</p>
+                <div class="apd-area"><i class="bi bi-building"></i> Seluruh area pabrik</div>
+              </div>
+            </div>
+
+            <!-- 4. Face Shield -->
+            <div class="apd-card c4 reveal" style="transition-delay:.13s">
+              <div class="apd-illus">
+                <div class="apd-illus-bg"></div>
+                <div class="apd-glow"></div>
+                <div class="apd-svg-wrap">
+                  <img src="img/apd/face-shield.png" alt="Face Shield">
+                </div>
+                <div class="apd-illus-num">04</div>
+              </div>
+              <div class="apd-body">
+                <div class="apd-badge">ARC Flash</div>
+                <h3 class="apd-name">Face Shield</h3>
+                <p class="apd-fungsi">Melindungi wajah dan mata dari percikan busur listrik (arc flash), serpihan logam, dan radiasi UV/IR saat bekerja pada switchgear dan panel MV/LV.</p>
+                <div class="apd-area"><i class="bi bi-grid-3x3-gap-fill"></i> Ruang panel, switchgear</div>
+              </div>
+            </div>
+
+            <!-- 5. Earmuff -->
+            <div class="apd-card c5 reveal" style="transition-delay:.16s">
+              <div class="apd-illus">
+                <div class="apd-illus-bg"></div>
+                <div class="apd-glow"></div>
+                <div class="apd-svg-wrap">
+                  <img src="img/apd/earmuff.png" alt="Earmuff">
+                </div>
+                <div class="apd-illus-num">05</div>
+              </div>
+              <div class="apd-body">
+                <div class="apd-badge">-30dB NRR</div>
+                <h3 class="apd-name">Earmuff</h3>
+                <p class="apd-fungsi">Melindungi pendengaran dari kebisingan mesin pembangkit dan transformator. Reduksi kebisingan hingga 30 dB (NRR) untuk paparan di atas 85 dB(A).</p>
+                <div class="apd-area"><i class="bi bi-tools"></i> Area maintenance, generator</div>
+              </div>
+            </div>
+
+            <!-- 6. Safety Harness -->
+            <div class="apd-card c6 reveal" style="transition-delay:.19s">
+              <div class="apd-illus">
+                <div class="apd-illus-bg"></div>
+                <div class="apd-glow"></div>
+                <div class="apd-svg-wrap">
+                  <img src="img/apd/safety-harness.png" alt="Safety Harness">
+                </div>
+                <div class="apd-illus-num">06</div>
+              </div>
+              <div class="apd-body">
+                <div class="apd-badge">EN 361</div>
+                <h3 class="apd-name">Safety Harness</h3>
+                <p class="apd-fungsi">Full body harness yang mendistribusikan gaya benturan ke seluruh tubuh saat terjatuh dari ketinggian. Wajib digunakan untuk pekerjaan di atas 1,8 meter. Sesuai EN 361.</p>
+                <div class="apd-area"><i class="bi bi-arrow-down-up"></i> Tiang listrik, ketinggian</div>
+              </div>
+            </div>
+
+            <!-- 7. Kacamata Pengaman -->
+            <div class="apd-card c7 reveal" style="transition-delay:.22s">
+              <div class="apd-illus">
+                <div class="apd-illus-bg"></div>
+                <div class="apd-glow"></div>
+                <div class="apd-svg-wrap">
+                  <img src="img/apd/kacamata-safety.png" alt="Kacamata Pengaman">
+                </div>
+                <div class="apd-illus-num">07</div>
+              </div>
+              <div class="apd-body">
+                <div class="apd-badge">UV/IR</div>
+                <h3 class="apd-name">Kacamata Pengaman</h3>
+                <p class="apd-fungsi">Melindungi mata dari debu, serpihan, percikan dan radiasi UV/IR saat pekerjaan grinding, pengelasan, atau di area berpotensi percikan. Standar ANSI Z87.1.</p>
+                <div class="apd-area"><i class="bi bi-tools"></i> Area maintenance &amp; fabrikasi</div>
+              </div>
+            </div>
+
+            <!-- 8. Rompi Safety -->
+            <div class="apd-card c8 reveal" style="transition-delay:.25s">
+              <div class="apd-illus">
+                <div class="apd-illus-bg"></div>
+                <div class="apd-glow"></div>
+                <div class="apd-svg-wrap">
+                  <img src="img/apd/rompi-safety.png" alt="Rompi Safety">
+                </div>
+                <div class="apd-illus-num">08</div>
+              </div>
+              <div class="apd-body">
+                <div class="apd-badge">Hi-Vis</div>
+                <h3 class="apd-name">Rompi Safety</h3>
+                <p class="apd-fungsi">Rompi high-visibility dengan pita retroreflektif untuk meningkatkan visibilitas pekerja di area outdoor, gardu induk, dan zona lalu lintas kendaraan berat.</p>
+                <div class="apd-area"><i class="bi bi-tree"></i> Area outdoor, switchyard</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- APD Summary -->
+          <div class="apd-summary reveal">
+            <div class="apd-summary-text">
+              <h3>Penggunaan APD adalah Kewajiban, Bukan Pilihan</h3>
+              <p>Setiap personel yang memasuki area operasional wajib menggunakan APD yang sesuai. Pelanggaran penggunaan APD dapat mengakibatkan tindakan disipliner hingga pemberhentian sementara dari area kerja sesuai prosedur K3 perusahaan.</p>
+            </div>
+            <div class="apd-summary-stats">
+              <div class="apd-stat"><div class="apd-stat-num">8</div><div class="apd-stat-label">Jenis APD Tersedia</div></div>
+              <div class="apd-stat"><div class="apd-stat-num">100%</div><div class="apd-stat-label">Kepatuhan Target</div></div>
+              <div class="apd-stat"><div class="apd-stat-num">ISO</div><div class="apd-stat-label">45001:2018</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL SOP -->
+        <div class="tab-panel" id="panel-sop">
+          <div class="sop-header reveal">
+            <div class="section-label">Prosedur Kerja Aman</div>
+            <h2 class="section-title">SOP Keselamatan <em>Per Area Kerja</em></h2>
+            <p class="section-desc">Standar Operasional Prosedur yang wajib dipatuhi sebelum, selama, dan setelah melakukan pekerjaan di setiap area operasional PT Power Grid Indonesia.</p>
+          </div>
+
+          <div class="sop-layout">
+            <!-- SOP Sidebar -->
+            <aside class="sop-sidebar" id="sopSidebar">
+              <a class="sop-nav-item active" href="#sop-gi"><i class="bi bi-lightning-charge"></i><div class="sop-nav-dot"></div>Gardu Induk</a>
+              <a class="sop-nav-item" href="#sop-panel"><i class="bi bi-grid-3x3-gap-fill"></i><div class="sop-nav-dot"></div>Ruang Panel Listrik</a>
+              <a class="sop-nav-item" href="#sop-maint"><i class="bi bi-tools"></i><div class="sop-nav-dot"></div>Area Maintenance</a>
+              <a class="sop-nav-item" href="#sop-gudang"><i class="bi bi-box-seam"></i><div class="sop-nav-dot"></div>Gudang Peralatan</a>
+              <a class="sop-nav-item" href="#sop-kontrol"><i class="bi bi-cpu"></i><div class="sop-nav-dot"></div>Ruang Kontrol</a>
+            </aside>
+
+            <!-- SOP Accordion List -->
+            <div class="sop-list" id="sopList">
+
+              <!-- SOP 1: Gardu Induk -->
+              <div class="sop-card open" data-color="blue" id="sop-gi">
+                <div class="sop-trigger" onclick="toggleSOP(this)">
+                  <div class="sop-num">01</div>
+                  <div class="sop-trigger-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+                  <div class="sop-meta">
+                    <div class="sop-tag">SOP-GI-001</div>
+                    <div class="sop-title">Gardu Induk</div>
+                    <div class="sop-subtitle">Prosedur kerja aman di area gardu induk tegangan menengah/tinggi</div>
+                  </div>
+                  <div class="sop-right"><span class="sop-risk-pill">Risiko Kritis</span><div class="sop-chevron"><i class="bi bi-chevron-down"></i></div></div>
+                </div>
+                <div class="sop-body">
+                  <div class="sop-body-inner">
+                    <div class="sop-steps">
+                      <div class="sop-step"><div class="sop-step-num">1</div><div class="sop-step-label">Izin Masuk</div></div>
+                      <div class="sop-step"><div class="sop-step-num">2</div><div class="sop-step-label">LOTO</div></div>
+                      <div class="sop-step"><div class="sop-step-num">3</div><div class="sop-step-label">Pasang APD</div></div>
+                      <div class="sop-step"><div class="sop-step-num">4</div><div class="sop-step-label">Grounding</div></div>
+                      <div class="sop-step"><div class="sop-step-num">5</div><div class="sop-step-label">Kerjakan</div></div>
+                      <div class="sop-step"><div class="sop-step-num">6</div><div class="sop-step-label">Restore</div></div>
+                    </div>
+                    <div class="sop-grid">
+                      <div class="sop-block bahaya"><div class="sop-block-head"><i class="bi bi-exclamation-triangle"></i><h4>Sumber Bahaya</h4></div><ul class="sop-block-list"><li>Konduktor bertegangan 20 kV – 150 kV</li><li>Energi tersimpan pada kapasitor dan kabel</li><li>Busur listrik (arc flash) saat switching</li><li>Medan elektromagnetik frekuensi 50 Hz</li></ul></div>
+                      <div class="sop-block jenis"><div class="sop-block-head"><i class="bi bi-info-circle"></i><h4>Jenis Bahaya</h4></div><ul class="sop-block-list"><li>Sengatan listrik tegangan menengah/tinggi</li><li>Luka bakar akibat arc flash</li><li>Paparan EMF jangka panjang</li></ul></div>
+                      <div class="sop-block pencegahan"><div class="sop-block-head"><i class="bi bi-shield-check"></i><h4>Pencegahan</h4></div><ul class="sop-block-list"><li>Laksanakan prosedur LOTO sebelum bekerja</li><li>Pasang safety grounding pada konduktor</li><li>Gunakan voltage detector sebelum menyentuh</li><li>Minimum 2 personel saat bekerja di GI</li></ul></div>
+                      <div class="sop-block apd"><div class="sop-block-head"><i class="bi bi-shield"></i><h4>APD Wajib</h4></div><div class="sop-apd-chips"><div class="sop-apd-chip"><i class="bi bi-shield"></i>Helm Listrik Kelas E</div><div class="sop-apd-chip"><i class="bi bi-hand-index-thumb"></i>Sarung Tangan Isolasi</div><div class="sop-apd-chip"><i class="bi bi-eye"></i>Face Shield</div><div class="sop-apd-chip"><i class="bi bi-shoe-prints"></i>Sepatu Anti-Static</div></div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SOP 2: Ruang Panel -->
+              <div class="sop-card" data-color="amber" id="sop-panel">
+                <div class="sop-trigger" onclick="toggleSOP(this)">
+                  <div class="sop-num">02</div>
+                  <div class="sop-trigger-icon"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+                  <div class="sop-meta"><div class="sop-tag">SOP-LP-002</div><div class="sop-title">Ruang Panel Listrik</div><div class="sop-subtitle">Prosedur akses dan kerja aman pada panel distribusi MV/LV</div></div>
+                  <div class="sop-right"><span class="sop-risk-pill">Risiko Tinggi</span><div class="sop-chevron"><i class="bi bi-chevron-down"></i></div></div>
+                </div>
+                <div class="sop-body"><div class="sop-body-inner"><div class="sop-steps"><div class="sop-step"><div class="sop-step-num">1</div><div class="sop-step-label">Work Permit</div></div><div class="sop-step"><div class="sop-step-num">2</div><div class="sop-step-label">De-energize</div></div><div class="sop-step"><div class="sop-step-num">3</div><div class="sop-step-label">Verifikasi</div></div><div class="sop-step"><div class="sop-step-num">4</div><div class="sop-step-label">Kerjakan</div></div><div class="sop-step"><div class="sop-step-num">5</div><div class="sop-step-label">Re-energize</div></div></div><div class="sop-grid"><div class="sop-block bahaya"><div class="sop-block-head"><i class="bi bi-exclamation-triangle"></i><h4>Sumber Bahaya</h4></div><ul class="sop-block-list"><li>Busbar bertegangan di balik cover panel</li><li>Kabel fleksibel yang terkelupas isolasinya</li><li>Overheating komponen akibat overload</li></ul></div><div class="sop-block jenis"><div class="sop-block-head"><i class="bi bi-info-circle"></i><h4>Jenis Bahaya</h4></div><ul class="sop-block-list"><li>Sengatan listrik tegangan rendah/menengah</li><li>Luka bakar arc flash kategori 1–2</li><li>Kebakaran akibat short circuit</li></ul></div><div class="sop-block pencegahan"><div class="sop-block-head"><i class="bi bi-shield-check"></i><h4>Pencegahan</h4></div><ul class="sop-block-list"><li>Wajib kantongi Energized Work Permit</li><li>Matikan MCB/CB yang terkait dan pasang gembok LOTO</li><li>Verifikasi dengan voltage tester</li></ul></div><div class="sop-block apd"><div class="sop-block-head"><i class="bi bi-shield"></i><h4>APD Wajib</h4></div><div class="sop-apd-chips"><div class="sop-apd-chip"><i class="bi bi-shield"></i>Helm Listrik</div><div class="sop-apd-chip"><i class="bi bi-eye"></i>Kacamata Safety</div><div class="sop-apd-chip"><i class="bi bi-eye"></i>Face Shield</div><div class="sop-apd-chip"><i class="bi bi-shoe-prints"></i>Sepatu Anti-Static</div></div></div></div></div></div>
+              </div>
+
+              <!-- SOP 3: Area Maintenance -->
+              <div class="sop-card" data-color="green" id="sop-maint">
+                <div class="sop-trigger" onclick="toggleSOP(this)">
+                  <div class="sop-num">03</div>
+                  <div class="sop-trigger-icon"><i class="bi bi-tools"></i></div>
+                  <div class="sop-meta"><div class="sop-tag">SOP-MT-003</div><div class="sop-title">Area Maintenance</div><div class="sop-subtitle">Prosedur kerja aman di bengkel perawatan dan perbaikan peralatan kelistrikan</div></div>
+                  <div class="sop-right"><span class="sop-risk-pill">Risiko Sedang</span><div class="sop-chevron"><i class="bi bi-chevron-down"></i></div></div>
+                </div>
+                <div class="sop-body"><div class="sop-body-inner"><div class="sop-steps"><div class="sop-step"><div class="sop-step-num">1</div><div class="sop-step-label">JSA</div></div><div class="sop-step"><div class="sop-step-num">2</div><div class="sop-step-label">APD On</div></div><div class="sop-step"><div class="sop-step-num">3</div><div class="sop-step-label">Cek Alat</div></div><div class="sop-step"><div class="sop-step-num">4</div><div class="sop-step-label">Kerjakan</div></div><div class="sop-step"><div class="sop-step-num">5</div><div class="sop-step-label">Bersihkan</div></div></div><div class="sop-grid"><div class="sop-block bahaya"><div class="sop-block-head"><i class="bi bi-exclamation-triangle"></i><h4>Sumber Bahaya</h4></div><ul class="sop-block-list"><li>Perkakas berputar (grinder, bor) dan benda tajam</li><li>Bahan kimia pelumas dan solvent mudah terbakar</li><li>Kebisingan mesin di atas 85 dB(A)</li></ul></div><div class="sop-block jenis"><div class="sop-block-head"><i class="bi bi-info-circle"></i><h4>Jenis Bahaya</h4></div><ul class="sop-block-list"><li>Luka sayat dan serpihan logam mengenai mata</li><li>Kebakaran akibat percikan + bahan mudah terbakar</li><li>Gangguan pendengaran akibat paparan bising</li></ul></div><div class="sop-block pencegahan"><div class="sop-block-head"><i class="bi bi-shield-check"></i><h4>Pencegahan</h4></div><ul class="sop-block-list"><li>Lakukan Job Safety Analysis (JSA) sebelum mulai</li><li>Simpan bahan mudah terbakar di kabinet tahan api</li><li>Gunakan exhaust fan saat bekerja dengan solvent</li></ul></div><div class="sop-block apd"><div class="sop-block-head"><i class="bi bi-shield"></i><h4>APD Wajib</h4></div><div class="sop-apd-chips"><div class="sop-apd-chip"><i class="bi bi-shield"></i>Helm Safety</div><div class="sop-apd-chip"><i class="bi bi-eye"></i>Kacamata Safety</div><div class="sop-apd-chip"><i class="bi bi-ear"></i>Earmuff -30dB</div><div class="sop-apd-chip"><i class="bi bi-shoe-prints"></i>Sepatu Safety</div></div></div></div></div></div>
+              </div>
+
+              <!-- SOP 4: Gudang Peralatan -->
+              <div class="sop-card" data-color="purple" id="sop-gudang">
+                <div class="sop-trigger" onclick="toggleSOP(this)">
+                  <div class="sop-num">04</div>
+                  <div class="sop-trigger-icon"><i class="bi bi-box-seam"></i></div>
+                  <div class="sop-meta"><div class="sop-tag">SOP-GD-004</div><div class="sop-title">Gudang Peralatan</div><div class="sop-subtitle">Prosedur keselamatan penyimpanan, pengeluaran, dan inspeksi APD &amp; peralatan kerja</div></div>
+                  <div class="sop-right"><span class="sop-risk-pill">Risiko Rendah</span><div class="sop-chevron"><i class="bi bi-chevron-down"></i></div></div>
+                </div>
+                <div class="sop-body"><div class="sop-body-inner"><div class="sop-grid"><div class="sop-block bahaya"><div class="sop-block-head"><i class="bi bi-exclamation-triangle"></i><h4>Sumber Bahaya</h4></div><ul class="sop-block-list"><li>Rak penyimpanan yang tidak stabil atau overload</li><li>APD yang kedaluwarsa atau rusak tersimpan bersama yang baik</li><li>Bahan kimia pelumas &amp; solvent tanpa label</li></ul></div><div class="sop-block jenis"><div class="sop-block-head"><i class="bi bi-info-circle"></i><h4>Jenis Bahaya</h4></div><ul class="sop-block-list"><li>Tertimpa peralatan berat dari rak tinggi</li><li>Penggunaan APD defektif akibat tidak diinspeksi</li><li>Kebakaran dari bahan mudah terbakar yang tidak tertata</li></ul></div><div class="sop-block pencegahan"><div class="sop-block-head"><i class="bi bi-shield-check"></i><h4>Pencegahan</h4></div><ul class="sop-block-list"><li>Inspeksi visual APD sebelum disimpan dan sebelum digunakan</li><li>Labeling wajib: nama barang, tanggal inspeksi, kondisi</li><li>Batas beban rak tertera dan tidak boleh dilampaui</li></ul></div><div class="sop-block apd"><div class="sop-block-head"><i class="bi bi-shield"></i><h4>APD Wajib</h4></div><div class="sop-apd-chips"><div class="sop-apd-chip"><i class="bi bi-shield"></i>Helm Safety</div><div class="sop-apd-chip"><i class="bi bi-shoe-prints"></i>Sepatu Safety</div><div class="sop-apd-chip"><i class="bi bi-hand-index-thumb"></i>Sarung Tangan Umum</div></div></div></div></div></div>
+              </div>
+
+              <!-- SOP 5: Ruang Kontrol -->
+              <div class="sop-card" data-color="cyan" id="sop-kontrol">
+                <div class="sop-trigger" onclick="toggleSOP(this)">
+                  <div class="sop-num">05</div>
+                  <div class="sop-trigger-icon"><i class="bi bi-cpu"></i></div>
+                  <div class="sop-meta"><div class="sop-tag">SOP-RK-005</div><div class="sop-title">Ruang Kontrol Distribusi</div><div class="sop-subtitle">Prosedur keselamatan operasional sistem SCADA dan pusat kendali distribusi</div></div>
+                  <div class="sop-right"><span class="sop-risk-pill">Risiko Sedang</span><div class="sop-chevron"><i class="bi bi-chevron-down"></i></div></div>
+                </div>
+                <div class="sop-body"><div class="sop-body-inner"><div class="sop-steps"><div class="sop-step"><div class="sop-step-num">1</div><div class="sop-step-label">Otorisasi</div></div><div class="sop-step"><div class="sop-step-num">2</div><div class="sop-step-label">Login SCADA</div></div><div class="sop-step"><div class="sop-step-num">3</div><div class="sop-step-label">Monitoring</div></div><div class="sop-step"><div class="sop-step-num">4</div><div class="sop-step-label">Manuver</div></div><div class="sop-step"><div class="sop-step-num">5</div><div class="sop-step-label">Log &amp; Lapor</div></div></div><div class="sop-grid"><div class="sop-block bahaya"><div class="sop-block-head"><i class="bi bi-exclamation-triangle"></i><h4>Sumber Bahaya</h4></div><ul class="sop-block-list"><li>Kesalahan manuver switching akibat kelelahan operator</li><li>Gangguan siber pada sistem SCADA (cyber attack)</li><li>Ergonomi buruk posisi duduk operator</li></ul></div><div class="sop-block jenis"><div class="sop-block-head"><i class="bi bi-info-circle"></i><h4>Jenis Bahaya</h4></div><ul class="sop-block-list"><li>Kesalahan operasional akibat human error kelelahan</li><li>Blackout distribusi area luas akibat manuver salah</li><li>Gangguan kesehatan mata dan musculoskeletal kronik</li></ul></div><div class="sop-block pencegahan"><div class="sop-block-head"><i class="bi bi-shield-check"></i><h4>Pencegahan</h4></div><ul class="sop-block-list"><li>Shift maksimal 8 jam, dengan istirahat wajib 30 menit/4 jam</li><li>Double-check prosedur manuver — 2 operator konfirmasi</li><li>Update antivirus dan firewall SCADA secara berkala</li></ul></div><div class="sop-block apd"><div class="sop-block-head"><i class="bi bi-shield"></i><h4>APD Wajib</h4></div><div class="sop-apd-chips"><div class="sop-apd-chip"><i class="bi bi-eye"></i>Kacamata Anti-Radiasi</div><div class="sop-apd-chip"><i class="bi bi-shoe-prints"></i>Sepatu Safety</div><div class="sop-apd-chip"><i class="bi bi-card-text"></i>Akses Kartu RFID</div></div></div></div></div></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-logo"><div class="icon-wrap"><img src="img/logo.png" alt="Logo Loader"></div><div class="footer-brand-name">PT Power Grid Indonesia<small>Sistem Informasi K3</small></div></div>
+        <p class="footer-tagline">Berkomitmen mewujudkan lingkungan kerja yang aman, sehat, dan produktif di seluruh jaringan infrastruktur kelistrikan nasional.</p>
+        <div class="footer-socials"><div class="social-btn"><i class="bi bi-twitter-x"></i></div><div class="social-btn"><i class="bi bi-linkedin"></i></div><div class="social-btn"><i class="bi bi-youtube"></i></div></div>
+      </div>
+      <div class="footer-col"><h4>Navigasi</h4><ul class="footer-links"><li><a href="index.html">Beranda</a></li><li><a href="profil.html">Profil Perusahaan</a></li><li><a href="hukum.html">Landasan Hukum</a></li><li><a href="denah.html">Denah Lokasi</a></li><li><a href="apd_sop.html">APD &amp; SOP</a></li><li><a href="video.html">Video Edukasi</a></li></ul></div>
+      <div class="footer-col"><h4>Kontak Perusahaan</h4><div class="contact-items"><div class="contact-item"><i class="bi bi-geo-alt-fill"></i><p><strong>Alamat</strong>Jl. Candi Raya No. 45, Kawasan Industri Malang, Jawa Timur 65123</p></div><div class="contact-item"><i class="bi bi-telephone-fill"></i><p><strong>Telepon</strong>+62 341 5555 6789</p></div><div class="contact-item"><i class="bi bi-envelope-fill"></i><p><strong>Email</strong>k3@powergrid.co.id</p></div></div></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; <span id="currentYear"></span> PT Power Grid Indonesia. Seluruh hak cipta dilindungi undang-undang.</p></div>
+  </footer>
+
+  <script>
+    document.getElementById('currentYear').innerText = new Date().getFullYear();
+
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
+    function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
+    document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open')));
+
+    function switchTab(name, btn) {
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('panel-' + name).classList.add('active');
+      if (btn) btn.classList.add('active');
+      else document.querySelectorAll('.tab-btn').forEach(b => { if (b.textContent.toLowerCase().includes(name)) b.classList.add('active'); });
+      setTimeout(() => { document.querySelectorAll('#panel-' + name + ' .reveal').forEach(el => { if (!el.classList.contains('visible')) observer.observe(el); }); }, 50);
+    }
+    function switchTabByName(name) { const btns = document.querySelectorAll('.tab-btn'); switchTab(name, btns[name === 'apd' ? 0 : 1]); }
+
+    function toggleSOP(trigger) {
+      const card = trigger.closest('.sop-card');
+      const isOpen = card.classList.contains('open');
+      card.closest('.sop-list').querySelectorAll('.sop-card.open').forEach(c => { if (c !== card) c.classList.remove('open'); });
+      card.classList.toggle('open', !isOpen);
+      updateSopNav();
+    }
+    function updateSopNav() {
+      const openCard = document.querySelector('.sop-card.open');
+      if (openCard) document.querySelectorAll('.sop-nav-item').forEach(n => n.classList.toggle('active', n.getAttribute('href') === '#' + openCard.id));
+    }
+    document.querySelectorAll('.sop-nav-item').forEach(item => {
+      item.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = item.getAttribute('href').replace('#', '');
+        const targetCard = document.getElementById(targetId);
+        if (targetCard && !targetCard.classList.contains('open')) {
+          document.querySelectorAll('.sop-card.open').forEach(c => c.classList.remove('open'));
+          targetCard.classList.add('open');
+        }
+        targetCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        updateSopNav();
+      });
+    });
+
+    const observer = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } }); }, { threshold: 0.07, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    window.addEventListener('scroll', () => {
+      const sopCards = document.querySelectorAll('.sop-card[id]');
+      let current = '';
+      sopCards.forEach(c => { if (window.scrollY >= c.offsetTop - 160) current = c.id; });
+      if (current) document.querySelectorAll('.sop-nav-item').forEach(n => n.classList.toggle('active', n.getAttribute('href') === '#' + current));
+    });
+  </script>
+</body>
+</html>
