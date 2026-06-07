@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Edukasi K3 — PT Power Grid Indonesia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style/index.css" />
+  <link rel="stylesheet" href="style/video.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <a class="nav-logo" href="index.html">
+      <div class="nav-logo-icon">
+        <img src="img/logo.png" alt="Logo Navbar">
+      </div>
+      <div class="nav-logo-text">
+        <span>Power Grid</span>
+      </div>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="profil.html">Profil Perusahaan</a></li>
+      <li><a href="hukum.html">Landasan Hukum</a></li>
+      <li><a href="denah.html">Denah Lokasi</a></li>
+      <li><a href="apd_sop.html">APD & SOP</a></li>
+      <li><a href="video.html" class="nav-cta">Video Edukasi</a></li>
+    </ul>
+
+    <div class="nav-burger" id="burger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="page-header-bg"></div>
+    <div class="page-header-content">
+      <div class="breadcrumb">
+        <a href="index.html">Beranda</a>
+        <i class="bi bi-chevron-right"></i>
+        <span>Video Edukasi</span>
+      </div>
+      <div class="page-header-badge">
+        <i class="bi bi-play-circle"></i>
+        Video Edukasi K3
+      </div>
+      <h1 class="page-header-title">Galeri <em>Video Edukasi</em></h1>
+      <p class="page-header-desc">Kumpulan video pembelajaran Keselamatan dan Kesehatan Kerja untuk meningkatkan kompetensi dan kesadaran K3 seluruh personel PT Power Grid Indonesia.</p>
+      <div class="header-chips">
+        <div class="header-chip yc"><i class="bi bi-camera-reels"></i> 6 Video Tersedia</div>
+        <div class="header-chip"><i class="bi bi-shield"></i> Pencegahan &amp; P3K</div>
+        <div class="header-chip"><i class="bi bi-translate"></i> Bahasa Inggris + Subtitle</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BODY -->
+  <div class="page-body">
+
+    <!-- Header + Filter -->
+    <div class="reveal" style="margin-bottom:48px;">
+      <div class="section-label">Edukasi K3</div>
+      <h2 class="section-title">Video Pembelajaran <em>Keselamatan Kerja</em></h2>
+      <p class="section-desc">Tonton dan pelajari prosedur keselamatan kerja yang benar melalui video edukatif dari pakar K3 internasional. Wajib ditonton oleh seluruh personel operasional.</p>
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterVideos('all', this)"><i class="bi bi-grid-3x3-gap-fill"></i> Semua Video <span class="filter-count">6</span></button>
+        <button class="filter-btn" onclick="filterVideos('pencegahan', this)"><i class="bi bi-shield-check"></i> Pencegahan <span class="filter-count">3</span></button>
+        <button class="filter-btn" onclick="filterVideos('pertolongan', this)"><i class="bi bi-plus-lg"></i> Pertolongan Pertama <span class="filter-count">3</span></button>
+      </div>
+    </div>
+
+    <!-- CATEGORY 1: PENCEGAHAN -->
+    <div class="video-section pencegahan" id="cat-pencegahan">
+      <div class="video-section-header reveal">
+        <div class="vs-icon"><i class="bi bi-shield-check"></i></div>
+        <div class="vs-text-group"><h2>Pencegahan Kecelakaan Kerja</h2><p>Prosedur dan teknik kerja aman untuk mencegah kecelakaan di lingkungan kelistrikan</p></div>
+        <span class="vs-count">3 Video</span>
+      </div>
+
+      <div class="video-grid">
+        <!-- VIDEO 1 -->
+        <div class="video-card reveal" style="transition-delay:.05s" data-cat="pencegahan">
+          <div class="vc-thumb" id="thumb-1">
+            <img class="vc-thumb-img" src="https://img.youtube.com/vi/cW0Ht8yszxA/maxresdefault.jpg" alt="High Voltage Working Safety Toolbox Talk" loading="lazy" onerror="this.src='https://img.youtube.com/vi/cW0Ht8yszxA/hqdefault.jpg'"/>
+            <div class="vc-overlay"></div>
+            <button class="vc-play" onclick="playVideo('thumb-1','cW0Ht8yszxA')"><i class="bi bi-play-fill"></i></button>
+            <span class="vc-cat pencegahan-cat"><i class="bi bi-shield"></i> Pencegahan</span>
+            <span class="vc-duration">Toolbox Talk</span>
+            <iframe id="iframe-1" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="vc-body">
+            <div class="vc-meta"><span class="vc-num">Video 01</span><span class="vc-dot"></span><span class="vc-source">YouTube · Electrical Safety</span></div>
+            <h3 class="vc-title">High Voltage Working Safety Toolbox Talk</h3>
+            <p class="vc-desc">Video ini menekankan protokol teknis kerja aman pada instalasi bertegangan tinggi, termasuk penggunaan APD spesifik dan prosedur verifikasi tegangan yang benar.</p>
+            <div class="vc-keypoints"><div class="vc-kp"><i class="bi bi-check-circle"></i> Aturan "Test Twice, Touch Once" — verifikasi tidak ada tegangan sisa sebelum menyentuh konduktor</div><div class="vc-kp"><i class="bi bi-check-circle"></i> APD wajib: sarung tangan kelas 2 dan pakaian tahan api untuk arc flash</div><div class="vc-kp"><i class="bi bi-check-circle"></i> Prosedur LOTO lengkap sebelum memulai pekerjaan pada instalasi bertegangan</div></div>
+            <div class="vc-footer"><button class="vc-watch-btn" onclick="playVideo('thumb-1','cW0Ht8yszxA')"><i class="bi bi-play-fill"></i> Tonton Sekarang</button><a class="vc-ext-link" href="https://youtu.be/cW0Ht8yszxA?si=HLtxvk0MVqGbkUxq" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Buka di YouTube</a></div>
+          </div>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div class="video-card reveal" style="transition-delay:.10s" data-cat="pencegahan">
+          <div class="vc-thumb" id="thumb-2">
+            <img class="vc-thumb-img" src="https://img.youtube.com/vi/Utl7sA8SMfw/maxresdefault.jpg" alt="Substation Safety for First Responders" loading="lazy" onerror="this.src='https://img.youtube.com/vi/Utl7sA8SMfw/hqdefault.jpg'"/>
+            <div class="vc-overlay"></div>
+            <button class="vc-play" onclick="playVideo('thumb-2','Utl7sA8SMfw')"><i class="bi bi-play-fill"></i></button>
+            <span class="vc-cat pencegahan-cat"><i class="bi bi-shield"></i> Pencegahan</span>
+            <span class="vc-duration">Gardu Induk</span>
+            <iframe id="iframe-2" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="vc-body">
+            <div class="vc-meta"><span class="vc-num">Video 02</span><span class="vc-dot"></span><span class="vc-source">YouTube · Substation Safety</span></div>
+            <h3 class="vc-title">Substation Safety for First Responders</h3>
+            <p class="vc-desc">Panduan navigasi aman di dalam gardu induk bagi petugas tanggap darurat dan teknisi. Mencakup bahaya tersembunyi yang sering diabaikan di area switchyard.</p>
+            <div class="vc-keypoints"><div class="vc-kp"><i class="bi bi-check-circle"></i> Larangan keras memanjat peralatan gardu induk dalam kondisi apapun tanpa izin</div><div class="vc-kp"><i class="bi bi-check-circle"></i> Cara menghindari paparan zat berbahaya seperti PCB dari transformator lama</div><div class="vc-kp"><i class="bi bi-check-circle"></i> Jarak aman minimum dari peralatan bertegangan di berbagai level kV</div></div>
+            <div class="vc-footer"><button class="vc-watch-btn" onclick="playVideo('thumb-2','Utl7sA8SMfw')"><i class="bi bi-play-fill"></i> Tonton Sekarang</button><a class="vc-ext-link" href="https://youtu.be/Utl7sA8SMfw?si=W7dSiBrOOH391_Lm" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Buka di YouTube</a></div>
+          </div>
+        </div>
+
+        <!-- VIDEO 3 -->
+        <div class="video-card reveal" style="transition-delay:.15s" data-cat="pencegahan">
+          <div class="vc-thumb" id="thumb-3">
+            <img class="vc-thumb-img" src="https://img.youtube.com/vi/TEf1Tsx_3MA/maxresdefault.jpg" alt="Fall Protection Basics ABCD" loading="lazy" onerror="this.src='https://img.youtube.com/vi/TEf1Tsx_3MA/hqdefault.jpg'"/>
+            <div class="vc-overlay"></div>
+            <button class="vc-play" onclick="playVideo('thumb-3','TEf1Tsx_3MA')"><i class="bi bi-play-fill"></i></button>
+            <span class="vc-cat pencegahan-cat"><i class="bi bi-shield"></i> Pencegahan</span>
+            <span class="vc-duration">Harness Safety</span>
+            <iframe id="iframe-3" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="vc-body">
+            <div class="vc-meta"><span class="vc-num">Video 03</span><span class="vc-dot"></span><span class="vc-source">YouTube · Fall Protection</span></div>
+            <h3 class="vc-title">Fall Protection Basics — ABCD's of PFAS</h3>
+            <p class="vc-desc">Dasar-dasar sistem perlindungan jatuh aktif (PFAS) dan penggunaan harness yang benar. Penting untuk seluruh teknisi yang bekerja pada tiang listrik dan ketinggian.</p>
+            <div class="vc-keypoints"><div class="vc-kp"><i class="bi bi-check-circle"></i> Perbedaan krusial: Restraint (membatasi agar tidak jatuh) vs. Arrest (menahan saat jatuh)</div><div class="vc-kp"><i class="bi bi-check-circle"></i> 4 komponen ABCD: Anchor, Body wear, Connecting device, Descent/rescue</div><div class="vc-kp"><i class="bi bi-check-circle"></i> Inspeksi harness sebelum digunakan — kapan harus diganti dan kapan harus dibuang</div></div>
+            <div class="vc-footer"><button class="vc-watch-btn" onclick="playVideo('thumb-3','TEf1Tsx_3MA')"><i class="bi bi-play-fill"></i> Tonton Sekarang</button><a class="vc-ext-link" href="https://youtu.be/TEf1Tsx_3MA?si=qjDROqPfCuq6evQs" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Buka di YouTube</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORY 2: PERTOLONGAN PERTAMA -->
+    <div class="video-section pertolongan" id="cat-pertolongan">
+      <div class="video-section-header reveal">
+        <div class="vs-icon"><i class="bi bi-plus-lg"></i></div>
+        <div class="vs-text-group"><h2>Pertolongan Pertama pada Kecelakaan</h2><p>Panduan penanganan darurat medis akibat kecelakaan kerja di lingkungan kelistrikan</p></div>
+        <span class="vs-count">3 Video</span>
+      </div>
+
+      <div class="video-grid">
+        <!-- VIDEO 4 -->
+        <div class="video-card reveal" style="transition-delay:.05s" data-cat="pertolongan">
+          <div class="vc-thumb" id="thumb-4">
+            <img class="vc-thumb-img" src="https://img.youtube.com/vi/xDQi1I04mXc/maxresdefault.jpg" alt="What to do if someone has an Electric Shock" loading="lazy" onerror="this.src='https://img.youtube.com/vi/xDQi1I04mXc/hqdefault.jpg'"/>
+            <div class="vc-overlay"></div>
+            <button class="vc-play" onclick="playVideo('thumb-4','xDQi1I04mXc')"><i class="bi bi-play-fill"></i></button>
+            <span class="vc-cat pertolongan-cat"><i class="bi bi-plus-lg"></i> Pertolongan Pertama</span>
+            <span class="vc-duration">Sengatan Listrik</span>
+            <iframe id="iframe-4" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="vc-body">
+            <div class="vc-meta"><span class="vc-num">Video 04</span><span class="vc-dot"></span><span class="vc-source">YouTube · First Aid</span></div>
+            <h3 class="vc-title">What to Do if Someone Has an Electric Shock?</h3>
+            <p class="vc-desc">Panduan langkah demi langkah penanganan korban sengatan listrik. Kesalahan penanganan pertama dapat memperparah kondisi korban atau membahayakan penolong.</p>
+            <div class="vc-keypoints"><div class="vc-kp"><i class="bi bi-check-circle"></i> Langkah pertama: putuskan arus listrik dengan aman — jangan sentuh korban sebelum aman</div><div class="vc-kp"><i class="bi bi-check-circle"></i> Cara mengevaluasi kondisi korban: kesadaran, pernapasan, nadi, dan luka bakar</div><div class="vc-kp"><i class="bi bi-check-circle"></i> Kapan harus melakukan CPR dan bagaimana cara memanggil bantuan medis darurat</div></div>
+            <div class="vc-footer"><button class="vc-watch-btn" onclick="playVideo('thumb-4','xDQi1I04mXc')"><i class="bi bi-play-fill"></i> Tonton Sekarang</button><a class="vc-ext-link" href="https://youtu.be/xDQi1I04mXc?si=mNMHP4LWL8J2Vp_t" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Buka di YouTube</a></div>
+          </div>
+        </div>
+
+        <!-- VIDEO 5 -->
+        <div class="video-card reveal" style="transition-delay:.10s" data-cat="pertolongan">
+          <div class="vc-thumb" id="thumb-5">
+            <img class="vc-thumb-img" src="https://img.youtube.com/vi/gC4aoCrrG4E/maxresdefault.jpg" alt="How to Rescue a Fallen Worker" loading="lazy" onerror="this.src='https://img.youtube.com/vi/gC4aoCrrG4E/hqdefault.jpg'"/>
+            <div class="vc-overlay"></div>
+            <button class="vc-play" onclick="playVideo('thumb-5','gC4aoCrrG4E')"><i class="bi bi-play-fill"></i></button>
+            <span class="vc-cat pertolongan-cat"><i class="bi bi-plus-lg"></i> Pertolongan Pertama</span>
+            <span class="vc-duration">Rescue Ketinggian</span>
+            <iframe id="iframe-5" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="vc-body">
+            <div class="vc-meta"><span class="vc-num">Video 05</span><span class="vc-dot"></span><span class="vc-source">YouTube · Rescue Protocol</span></div>
+            <h3 class="vc-title">How to Rescue a Fallen Worker</h3>
+            <p class="vc-desc">Protokol evakuasi pekerja yang tergantung pada tali pengaman. Sangat krusial untuk mencegah kondisi fatal yang sering tidak disadari di lapangan.</p>
+            <div class="vc-keypoints"><div class="vc-kp"><i class="bi bi-check-circle"></i> Suspension Trauma — kondisi fatal darah terkumpul di kaki saat tergantung lebih dari 15–30 menit</div><div class="vc-kp"><i class="bi bi-check-circle"></i> Teknik rescue yang benar: cara menurunkan korban tanpa memperparah cedera tulang belakang</div><div class="vc-kp"><i class="bi bi-check-circle"></i> Rescue plan wajib disusun sebelum pekerjaan di ketinggian — bukan saat darurat</div></div>
+            <div class="vc-footer"><button class="vc-watch-btn" onclick="playVideo('thumb-5','gC4aoCrrG4E')"><i class="bi bi-play-fill"></i> Tonton Sekarang</button><a class="vc-ext-link" href="https://youtu.be/gC4aoCrrG4E?si=S396SGvSLcBXPgVe" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Buka di YouTube</a></div>
+          </div>
+        </div>
+
+        <!-- VIDEO 6 -->
+        <div class="video-card reveal" style="transition-delay:.15s" data-cat="pertolongan">
+          <div class="vc-thumb" id="thumb-6">
+            <img class="vc-thumb-img" src="https://img.youtube.com/vi/xTu2WdTJgPA/maxresdefault.jpg" alt="Thermal Chemical and Electrical Burns" loading="lazy" onerror="this.src='https://img.youtube.com/vi/xTu2WdTJgPA/hqdefault.jpg'"/>
+            <div class="vc-overlay"></div>
+            <button class="vc-play" onclick="playVideo('thumb-6','xTu2WdTJgPA')"><i class="bi bi-play-fill"></i></button>
+            <span class="vc-cat pertolongan-cat"><i class="bi bi-plus-lg"></i> Pertolongan Pertama</span>
+            <span class="vc-duration">Luka Bakar</span>
+            <iframe id="iframe-6" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="vc-body">
+            <div class="vc-meta"><span class="vc-num">Video 06</span><span class="vc-dot"></span><span class="vc-source">YouTube · Medical First Aid</span></div>
+            <h3 class="vc-title">Thermal, Chemical and Electrical Burns</h3>
+            <p class="vc-desc">Panduan medis penanganan berbagai jenis luka bakar. Luka bakar listrik seringkali memiliki kerusakan jauh lebih dalam dari yang terlihat di permukaan kulit.</p>
+            <div class="vc-keypoints"><div class="vc-kp"><i class="bi bi-check-circle"></i> Luka bakar listrik lebih berbahaya — arus merusak jaringan dalam meski kulit tampak ringan</div><div class="vc-kp"><i class="bi bi-check-circle"></i> Aturan pendinginan: air mengalir 20 menit, jangan es, jangan pasta gigi, jangan krim</div><div class="vc-kp"><i class="bi bi-check-circle"></i> Kapan harus ke IGD — tanda luka bakar kritis yang memerlukan penanganan segera</div></div>
+            <div class="vc-footer"><button class="vc-watch-btn" onclick="playVideo('thumb-6','xTu2WdTJgPA')"><i class="bi bi-play-fill"></i> Tonton Sekarang</button><a class="vc-ext-link" href="https://youtu.be/xTu2WdTJgPA?si=IwgC_Xbkn7AxCAMZ" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Buka di YouTube</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIPS SECTION -->
+    <div class="tips-section reveal">
+      <div class="tips-header">
+        <div class="tips-header-text"><div class="section-label">Tips &amp; Pengingat</div><h2 class="section-title">Tips <em>Keselamatan Kerja</em></h2><p class="section-desc" style="color:rgba(255,255,255,.55);">Pengingat cepat prosedur K3 yang wajib diingat oleh seluruh personel di setiap hari kerja.</p></div>
+        <div class="tips-live"><div class="live-dot"></div>Selalu Berlaku</div>
+      </div>
+
+      <div class="tips-ticker-wrap">
+        <div class="tips-ticker" id="ticker">
+          <div class="ticker-item"><div class="ticker-dot"></div>Selalu kenakan APD lengkap sebelum memasuki area operasional<span class="ticker-sep">·</span></div>
+          <div class="ticker-item"><div class="ticker-dot"></div>Lakukan LOTO sebelum bekerja pada instalasi listrik bertegangan<span class="ticker-sep">·</span></div>
+          <div class="ticker-item"><div class="ticker-dot"></div>Test Twice, Touch Once — verifikasi tegangan sebelum menyentuh konduktor<span class="ticker-sep">·</span></div>
+          <div class="ticker-item"><div class="ticker-dot"></div>Harness wajib untuk pekerjaan di atas 1,8 meter — tidak ada pengecualian<span class="ticker-sep">·</span></div>
+          <div class="ticker-item"><div class="ticker-dot"></div>Laporkan setiap near-miss, tidak hanya kecelakaan yang terjadi<span class="ticker-sep">·</span></div>
+          <div class="ticker-item"><div class="ticker-dot"></div>Jangan bekerja sendiri di area bertegangan tinggi — minimal 2 personel<span class="ticker-sep">·</span></div>
+          <div class="ticker-item"><div class="ticker-dot"></div>Selalu kenakan APD lengkap sebelum memasuki area operasional<span class="ticker-sep">·</span></div>
+          <div class="ticker-item"><div class="ticker-dot"></div>Lakukan LOTO sebelum bekerja pada instalasi listrik bertegangan<span class="ticker-sep">·</span></div>
+          <div class="ticker-item"><div class="ticker-dot"></div>Test Twice, Touch Once — verifikasi tegangan sebelum menyentuh konduktor<span class="ticker-sep">·</span></div>
+          <div class="ticker-item"><div class="ticker-dot"></div>Harness wajib untuk pekerjaan di atas 1,8 meter — tidak ada pengecualian<span class="ticker-sep">·</span></div>
+          <div class="ticker-item"><div class="ticker-dot"></div>Laporkan setiap near-miss, tidak hanya kecelakaan yang terjadi<span class="ticker-sep">·</span></div>
+          <div class="ticker-item"><div class="ticker-dot"></div>Jangan bekerja sendiri di area bertegangan tinggi — minimal 2 personel<span class="ticker-sep">·</span></div>
+        </div>
+      </div>
+
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-icon"><i class="bi bi-lightning-charge"></i></div><div class="tip-title">Test Twice, Touch Once</div><div class="tip-desc">Gunakan voltage tester dua kali dari dua titik berbeda sebelum menyentuh konduktor. Satu kali pengujian tidak cukup untuk memastikan keamanan.</div></div>
+        <div class="tip-card"><div class="tip-icon"><i class="bi bi-shield-lock"></i></div><div class="tip-title">Protokol LOTO Wajib</div><div class="tip-desc">Lockout/Tagout bukan formalitas. Pastikan setiap sumber energi — listrik, mekanik, pneumatik — telah dikunci dan diberi tag sebelum pekerjaan dimulai.</div></div>
+        <div class="tip-card"><div class="tip-icon"><i class="bi bi-arrow-down-up"></i></div><div class="tip-title">Harness + Rescue Plan</div><div class="tip-desc">Memakai harness saja tidak cukup. Rescue plan harus sudah tersedia sebelum pekerjaan dimulai — bukan saat kedaruratan sudah terjadi.</div></div>
+        <div class="tip-card"><div class="tip-icon"><i class="bi bi-exclamation-triangle"></i></div><div class="tip-title">Jangan Sentuh Korban Sengatan</div><div class="tip-desc">Saat menolong korban sengatan listrik, putuskan arus terlebih dahulu. Menyentuh langsung dapat membuat penolong juga tersengat dan menjadi korban kedua.</div></div>
+        <div class="tip-card"><div class="tip-icon"><i class="bi bi-people"></i></div><div class="tip-title">Minimal 2 Personel</div><div class="tip-desc">Jangan pernah bekerja sendiri di area bertegangan tinggi atau ketinggian. Satu orang bertugas sebagai pengawas yang siap memanggil bantuan darurat.</div></div>
+        <div class="tip-card"><div class="tip-icon"><i class="bi bi-chat-dots"></i></div><div class="tip-title">Lapor Near-Miss</div><div class="tip-desc">Setiap hampir-kecelakaan (near-miss) wajib dilaporkan. Near-miss adalah sinyal bahwa sistem belum aman — tangani sebelum menjadi kecelakaan nyata.</div></div>
+        <div class="tip-card"><div class="tip-icon"><i class="bi bi-droplet"></i></div><div class="tip-title">Luka Bakar Listrik — Air 20 Menit</div><div class="tip-desc">Untuk luka bakar listrik, alirkan air dingin bersih selama 20 menit. Jangan gunakan es, pasta gigi, atau krim apapun — itu dapat memperburuk kerusakan.</div></div>
+        <div class="tip-card"><div class="tip-icon"><i class="bi bi-hourglass-split"></i></div><div class="tip-title">Suspension Trauma — Segera Turunkan</div><div class="tip-desc">Pekerja yang tergantung pada harness lebih dari 15–30 menit berisiko suspension trauma. Evakuasi segera dan posisikan horizontal setelah diturunkan.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-logo"><div class="icon-wrap"><img src="img/logo.png" alt="Logo Loader"></i></div><div class="footer-brand-name">PT Power Grid Indonesia<small>Sistem Informasi K3</small></div></div>
+        <p class="footer-tagline">Berkomitmen mewujudkan lingkungan kerja yang aman, sehat, dan produktif di seluruh jaringan infrastruktur kelistrikan nasional.</p>
+        <div class="footer-socials"><div class="social-btn"><i class="bi bi-twitter-x"></i></div><div class="social-btn"><i class="bi bi-linkedin"></i></div><div class="social-btn"><i class="bi bi-youtube"></i></div></div>
+      </div>
+      <div class="footer-col"><h4>Navigasi</h4><ul class="footer-links"><li><a href="index.html">Beranda</a></li><li><a href="profil.html">Profil Perusahaan</a></li><li><a href="hukum.html">Landasan Hukum</a></li><li><a href="denah.html">Denah Lokasi</a></li><li><a href="apd_sop.html">APD &amp; SOP</a></li><li><a href="video.html">Video Edukasi</a></li></ul></div>
+      <div class="footer-col"><h4>Kontak Perusahaan</h4><div class="contact-items"><div class="contact-item"><i class="bi bi-geo-alt-fill"></i><p><strong>Alamat</strong>Jl. Candi Raya No. 45, Kawasan Industri Malang, Jawa Timur 65123</p></div><div class="contact-item"><i class="bi bi-telephone-fill"></i><p><strong>Telepon</strong>+62 341 5555 6789</p></div><div class="contact-item"><i class="bi bi-envelope-fill"></i><p><strong>Email</strong>k3@powergrid.co.id</p></div></div></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; <span id="currentYear"></span> PT Power Grid Indonesia. Seluruh hak cipta dilindungi undang-undang.</p></div>
+  </footer>
+
+  <script>
+    // Set current year
+    document.getElementById('currentYear').innerText = new Date().getFullYear();
+
+    // Navbar sticky
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
+    function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
+    document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open')));
+
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } }); }, { threshold: 0.07, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Play video inline
+    function playVideo(thumbId, videoId) {
+      const thumb = document.getElementById(thumbId);
+      const iframeId = 'iframe-' + thumbId.split('-')[1];
+      const iframe = document.getElementById(iframeId);
+      iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0&modestbranding=1';
+      thumb.classList.add('playing');
+    }
+
+    // Filter videos
+    function filterVideos(cat, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const sections = { pencegahan: document.getElementById('cat-pencegahan'), pertolongan: document.getElementById('cat-pertolongan') };
+      const cards = document.querySelectorAll('.video-card');
+      if (cat === 'all') {
+        Object.values(sections).forEach(s => { if (s) s.style.display = ''; });
+        cards.forEach(c => { c.style.display = ''; });
+      } else {
+        Object.entries(sections).forEach(([key, sec]) => { if (sec) sec.style.display = key === cat ? '' : 'none'; });
+      }
+    }
+
+    // Pause other iframes when a new one plays
+    document.querySelectorAll('.vc-play').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const currentThumb = this.closest('.vc-thumb');
+        document.querySelectorAll('.vc-thumb.playing').forEach(t => {
+          if (t !== currentThumb) {
+            t.classList.remove('playing');
+            const iframe = t.querySelector('iframe');
+            if (iframe) iframe.src = '';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
