@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landasan Hukum K3 — PT Power Grid Indonesia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/hukum.css" />
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a class="nav-logo" href="index.html">
+            <div class="nav-logo-icon">
+                <img src="img/logo.png" alt="Logo Navbar">
+            </div>
+            <div class="nav-logo-text">
+                <span>Power Grid</span>
+            </div>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil Perusahaan</a></li>
+            <li><a href="hukum.html" class="active">Landasan Hukum</a></li>
+            <li><a href="denah.html">Denah Lokasi</a></li>
+            <li><a href="apd_sop.html">APD & SOP</a></li>
+            <li><a href="video.html" class="nav-cta">Video Edukasi</a></li>
+        </ul>
+        <div class="nav-burger" id="burger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="page-header-bg"></div>
+        <div class="header-deco"></div>
+        <div class="page-header-content">
+            <div class="breadcrumb">
+                <a href="index.html">Beranda</a>
+                <i class="bi bi-chevron-right"></i>
+                <span>Landasan Hukum</span>
+            </div>
+            <div class="page-header-badge">
+                <i class="bi bi-book"></i>
+                Regulasi &amp; Perundangan
+            </div>
+            <h1 class="page-header-title">Landasan <em>Hukum K3</em><br>Kelistrikan</h1>
+            <p class="page-header-desc">Seluruh kegiatan operasional PT Power Grid Indonesia berlandaskan peraturan perundang-undangan K3 yang berlaku di Indonesia, mulai dari undang-undang hingga standar teknis nasional.</p>
+            <div class="header-chips">
+                <div class="header-chip yc">
+                    <i class="bi bi-file-text"></i>
+                    5 Undang-Undang
+                </div>
+                <div class="header-chip">
+                    <i class="bi bi-check-circle"></i>
+                    7 Peraturan Pemerintah
+                </div>
+                <div class="header-chip">
+                    <i class="bi bi-clock-history"></i>
+                    1 Standar Teknis
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-body" id="pageBody">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-title">Daftar Isi</div>
+            <a class="toc-item active" href="#uu" onclick="setActive(this)">
+                <i class="bi bi-file-text"></i>
+                <div class="toc-dot"></div>
+                A. Undang-Undang
+            </a>
+            <a class="toc-item" href="#permen" onclick="setActive(this)">
+                <i class="bi bi-shield-check"></i>
+                <div class="toc-dot"></div>
+                B. Peraturan Pemerintah &amp; Menteri
+            </a>
+            <a class="toc-item" href="#standar" onclick="setActive(this)">
+                <i class="bi bi-diagram-3"></i>
+                <div class="toc-dot"></div>
+                C. Standar Teknis
+            </a>
+            <div class="sidebar-counter">
+                <div class="sc-row">
+                    <span class="sc-label">Total Regulasi</span>
+                    <span class="sc-num">13</span>
+                </div>
+                <div class="sc-row">
+                    <span class="sc-label">UU &amp; PP</span>
+                    <span class="sc-num">12</span>
+                </div>
+                <div class="sc-row">
+                    <span class="sc-label">Standar Teknis</span>
+                    <span class="sc-num">1</span>
+                </div>
+                <div class="sc-row" style="margin-top:4px;padding-top:10px;border-top:1px solid rgba(255,255,255,.08)">
+                    <span class="sc-label" style="color:rgba(255,255,255,.4);font-size:.72rem;">Terakhir diperbarui</span>
+                    <span style="font-size:.78rem;color:rgba(255,255,255,.6);">2026</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <!-- A. UNDANG-UNDANG -->
+            <div class="law-section" id="uu">
+                <div class="law-section-header reveal">
+                    <div class="section-icon uu">
+                        <i class="bi bi-file-text"></i>
+                    </div>
+                    <div class="section-header-text uu">
+                        <div class="section-label-tag">Bagian A</div>
+                        <h2 class="section-heading">Undang-Undang</h2>
+                        <p class="section-sub">Produk legislasi tertinggi yang menjadi landasan normatif K3 kelistrikan</p>
+                    </div>
+                </div>
+                <div class="accordion-list">
+                    <!-- UU No. 1 Tahun 1970 -->
+                    <div class="acc-card reveal" style="transition-delay:.04s">
+                        <div class="acc-trigger" onclick="toggleAcc(this)">
+                            <div class="acc-icon">
+                                <i class="bi bi-shield-shaded"></i>
+                            </div>
+                            <div class="acc-meta">
+                                <div class="acc-number">UU No. 1 Tahun 1970</div>
+                                <div class="acc-title">Undang-Undang Keselamatan Kerja</div>
+                                <div class="acc-subtitle">Kementerian Ketenagakerjaan RI</div>
+                            </div>
+                            <div class="acc-right">
+                                <span class="acc-year">1970</span>
+                                <div class="acc-chevron"><i class="bi bi-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="acc-body">
+                            <div class="acc-body-inner grid2">
+                                <div>
+                                    <span class="acc-status berlaku"><i class="bi bi-check-circle"></i> Masih Berlaku</span>
+                                    <p class="acc-desc">Undang-Undang ini merupakan tonggak utama hukum keselamatan kerja di Indonesia. Mengatur kewajiban setiap pengusaha dan pekerja untuk menjaga keselamatan di tempat kerja, khususnya di lingkungan yang berpotensi bahaya tinggi seperti industri kelistrikan.</p>
+                                    <ul class="acc-points">
+                                        <li>Kewajiban pengusaha menyediakan APD dan prosedur keselamatan</li>
+                                        <li>Pembentukan panitia pembina K3 (P2K3) di perusahaan</li>
+                                        <li>Kewajiban pemeriksaan dan pengujian alat kelistrikan secara berkala</li>
+                                        <li>Pelaporan kecelakaan kerja kepada instansi ketenagakerjaan</li>
+                                    </ul>
+                                    <div class="acc-tags">
+                                        <span class="acc-tag">Keselamatan Kerja</span>
+                                        <span class="acc-tag">Kewajiban Pengusaha</span>
+                                        <span class="acc-tag">P2K3</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-info-circle"></i>
+                                        <span><strong>Lingkup Berlaku:</strong> Seluruh tempat kerja di wilayah Indonesia termasuk pembangkit, transmisi, dan distribusi listrik</span>
+                                    </div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-journal-bookmark"></i>
+                                        <span><strong>Pasal Kunci:</strong> Pasal 3 (syarat keselamatan kerja), Pasal 12 (kewajiban pekerja), Pasal 14 (kewajiban pengurus)</span>
+                                    </div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-gavel"></i>
+                                        <span><strong>Sanksi:</strong> Pidana kurungan maksimal 3 bulan atau denda bagi pengusaha yang melanggar ketentuan keselamatan</span>
+                                    </div>
+                                    <div class="acc-highlight">
+                                        <i class="bi bi-exclamation-triangle"></i>
+                                        <span><strong>Relevansi K3 Listrik:</strong> Menjadi dasar hukum utama bagi seluruh SOP dan prosedur keselamatan di fasilitas kelistrikan PT Power Grid Indonesia.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UU No. 30 Tahun 2009 -->
+                    <div class="acc-card reveal" style="transition-delay:.07s">
+                        <div class="acc-trigger" onclick="toggleAcc(this)">
+                            <div class="acc-icon">
+                                <i class="bi bi-lightning-charge"></i>
+                            </div>
+                            <div class="acc-meta">
+                                <div class="acc-number">UU No. 30 Tahun 2009</div>
+                                <div class="acc-title">Undang-Undang Ketenagalistrikan</div>
+                                <div class="acc-subtitle">Kementerian ESDM RI</div>
+                            </div>
+                            <div class="acc-right">
+                                <span class="acc-year">2009</span>
+                                <div class="acc-chevron"><i class="bi bi-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="acc-body">
+                            <div class="acc-body-inner grid2">
+                                <div>
+                                    <span class="acc-status berlaku"><i class="bi bi-check-circle"></i> Masih Berlaku</span>
+                                    <p class="acc-desc">Mengatur secara komprehensif pengelolaan ketenagalistrikan nasional, termasuk aspek keselamatan dalam pembangkitan, transmisi, distribusi, dan penggunaan tenaga listrik. Memandatkan standar teknis yang wajib dipenuhi oleh setiap badan usaha kelistrikan.</p>
+                                    <ul class="acc-points">
+                                        <li>Kewajiban sertifikasi kompetensi tenaga teknik kelistrikan</li>
+                                        <li>Standar laik operasi instalasi tenaga listrik</li>
+                                        <li>Sertifikat laik operasi (SLO) wajib sebelum instalasi dioperasikan</li>
+                                        <li>Ketentuan keselamatan ketenagalistrikan (K2)</li>
+                                        <li>Inspeksi berkala oleh lembaga inspeksi teknis terakreditasi</li>
+                                    </ul>
+                                    <div class="acc-tags">
+                                        <span class="acc-tag">K2 Listrik</span>
+                                        <span class="acc-tag">SLO</span>
+                                        <span class="acc-tag">Sertifikasi Kompetensi</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-info-circle"></i>
+                                        <span><strong>Lingkup Berlaku:</strong> Seluruh usaha ketenagalistrikan termasuk pembangkitan, transmisi, distribusi, dan penjualan tenaga listrik</span>
+                                    </div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-journal-bookmark"></i>
+                                        <span><strong>Pasal Kunci:</strong> Pasal 44 (keselamatan ketenagalistrikan), Pasal 45 (tanggung jawab pemegang izin), Pasal 46 (sertifikasi kompetensi), Pasal 54 (sanksi pidana)</span>
+                                    </div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-gavel"></i>
+                                        <span><strong>Sanksi:</strong> Pidana penjara maksimal 6 tahun atau denda maksimal Rp60 miliar bagi yang mengoperasikan instalasi tanpa Sertifikat Laik Operasi (SLO)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UU No. 36 Tahun 2009 -->
+                    <div class="acc-card reveal" style="transition-delay:.13s">
+                        <div class="acc-trigger" onclick="toggleAcc(this)">
+                            <div class="acc-icon">
+                                <i class="bi bi-heart-pulse"></i>
+                            </div>
+                            <div class="acc-meta">
+                                <div class="acc-number">UU No. 36 Tahun 2009</div>
+                                <div class="acc-title">Undang-Undang Kesehatan</div>
+                                <div class="acc-subtitle">Kementerian Kesehatan RI</div>
+                            </div>
+                            <div class="acc-right">
+                                <span class="acc-year">2009</span>
+                                <div class="acc-chevron"><i class="bi bi-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="acc-body">
+                            <div class="acc-body-inner single">
+                                <span class="acc-status berlaku"><i class="bi bi-check-circle"></i> Masih Berlaku</span>
+                                <p class="acc-desc">Undang-Undang ini menjamin hak pekerja atas upaya kesehatan kerja, termasuk pemeriksaan kesehatan berkala bagi tenaga kerja yang bekerja di lingkungan berisiko tinggi seperti instalasi kelistrikan, gardu induk, dan area maintenance.</p>
+                                <ul class="acc-points">
+                                    <li>Pemeriksaan kesehatan berkala minimal satu tahun sekali bagi teknisi gardu induk dan panel listrik</li>
+                                    <li>Penyediaan fasilitas kesehatan kerja di lingkungan perusahaan</li>
+                                    <li>Pengawasan kesehatan kerja terintegrasi dengan program K3 perusahaan</li>
+                                    <li>Hak pekerja atas pelayanan kesehatan yang layak selama bekerja</li>
+                                </ul>
+                                <div class="acc-info-row">
+                                    <i class="bi bi-info-circle"></i>
+                                    <span><strong>Lingkup Berlaku:</strong> Seluruh tempat kerja termasuk PT Power Grid Indonesia yang memiliki potensi risiko kesehatan akibat paparan medan elektromagnetik dan bahan kimia (minyak trafo)</span>
+                                </div>
+                                <div class="acc-info-row">
+                                    <i class="bi bi-journal-bookmark"></i>
+                                    <span><strong>Pasal Kunci:</strong> Pasal 25 (hak atas kesehatan), Pasal 60 (kewajiban penyelenggaraan kesehatan kerja), Pasal 167 (sanksi)</span>
+                                </div>
+                                <div class="acc-info-row">
+                                    <i class="bi bi-gavel"></i>
+                                    <span><strong>Sanksi:</strong> Pidana penjara maksimal 1 tahun atau denda maksimal Rp100 juta bagi perusahaan yang tidak menyelenggarakan kesehatan kerja dengan baik</span>
+                                </div>
+                                <div class="acc-highlight">
+                                    <i class="bi bi-exclamation-triangle"></i>
+                                    <span><strong>Relevansi:</strong> PT Power Grid Indonesia wajib menyelenggarakan pemeriksaan kesehatan berkala bagi seluruh teknisi yang terpapar medan elektromagnetik dan bekerja di area gardu induk.</span>
+                                </div>
+                                <div class="acc-tags">
+                                    <span class="acc-tag">Kesehatan Kerja</span>
+                                    <span class="acc-tag">Medical Check Up</span>
+                                    <span class="acc-tag">Fasilitas Kesehatan</span>
+                                    <span class="acc-tag">Hak Pekerja</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UU No. 13 Tahun 2003 -->
+                    <div class="acc-card reveal" style="transition-delay:.10s">
+                        <div class="acc-trigger" onclick="toggleAcc(this)">
+                            <div class="acc-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <div class="acc-meta">
+                                <div class="acc-number">UU No. 13 Tahun 2003</div>
+                                <div class="acc-title">Undang-Undang Ketenagakerjaan</div>
+                                <div class="acc-subtitle">Kementerian Ketenagakerjaan RI</div>
+                            </div>
+                            <div class="acc-right">
+                                <span class="acc-year">2003</span>
+                                <div class="acc-chevron"><i class="bi bi-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="acc-body">
+                            <div class="acc-body-inner single">
+                                <span class="acc-status berlaku"><i class="bi bi-check-circle"></i> Masih Berlaku</span>
+                                <p class="acc-desc">Mengatur hak dan kewajiban tenaga kerja, termasuk hak atas perlindungan keselamatan dan kesehatan kerja. Setiap pekerja berhak mendapatkan perlindungan K3 dari pengusaha tanpa pengecualian, termasuk di lingkungan kerja berisiko tinggi seperti instalasi kelistrikan.</p>
+                                <ul class="acc-points">
+                                    <li>Hak pekerja atas perlindungan K3 (Pasal 86)</li>
+                                    <li>Kewajiban pengusaha menerapkan sistem manajemen K3 (Pasal 87)</li>
+                                    <li>Pengaturan jam kerja dan istirahat untuk mencegah kelelahan yang memicu kecelakaan</li>
+                                    <li>Ketentuan jaminan sosial ketenagakerjaan termasuk jaminan kecelakaan kerja</li>
+                                </ul>
+                                <div class="acc-info-row">
+                                    <i class="bi bi-info-circle"></i>
+                                    <span><strong>Lingkup Berlaku:</strong> Seluruh perusahaan di Indonesia termasuk PT Power Grid Indonesia yang mempekerjakan tenaga kerja pada instalasi kelistrikan</span>
+                                </div>
+                                <div class="acc-info-row">
+                                    <i class="bi bi-journal-bookmark"></i>
+                                    <span><strong>Pasal Kunci:</strong> Pasal 86 (hak atas K3), Pasal 87 (kewajiban SMK3), Pasal 88 (sanksi administratif)</span>
+                                </div>
+                                <div class="acc-info-row">
+                                    <i class="bi bi-gavel"></i>
+                                    <span><strong>Sanksi:</strong> Pidana kurungan maksimal 1 tahun atau denda maksimal Rp100 juta bagi pengusaha yang tidak memenuhi kewajiban K3 (Pasal 190)</span>
+                                </div>
+                                <div class="acc-highlight">
+                                    <i class="bi bi-exclamation-triangle"></i>
+                                    <span><strong>Pasal 87 ayat (1):</strong> "Setiap perusahaan wajib menerapkan sistem manajemen keselamatan dan kesehatan kerja yang terintegrasi dengan sistem manajemen perusahaan."</span>
+                                </div>
+                                <div class="acc-tags">
+                                    <span class="acc-tag">SMK3</span>
+                                    <span class="acc-tag">Hak Pekerja</span>
+                                    <span class="acc-tag">Jaminan K3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UU No. 11 Tahun 2020 -->
+                    <div class="acc-card reveal" style="transition-delay:.13s">
+                        <div class="acc-trigger" onclick="toggleAcc(this)">
+                            <div class="acc-icon">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <div class="acc-meta">
+                                <div class="acc-number">UU No. 11 Tahun 2020</div>
+                                <div class="acc-title">Undang-Undang Cipta Kerja</div>
+                                <div class="acc-subtitle">Pemerintah RI (Omnibus Law)</div>
+                            </div>
+                            <div class="acc-right">
+                                <span class="acc-year">2020</span>
+                                <div class="acc-chevron"><i class="bi bi-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="acc-body">
+                            <div class="acc-body-inner single">
+                                <span class="acc-status berlaku"><i class="bi bi-check-circle"></i> Masih Berlaku</span>
+                                <p class="acc-desc">UU Omnibus Law Cipta Kerja mengubah dan menyederhanakan ratusan regulasi, termasuk ketentuan di sektor ketenagakerjaan dan kelistrikan. Meskipun memangkas birokrasi perizinan, kewajiban penerapan K3 tetap dipertahankan sebagai standar non-negosiasi.</p>
+                                <ul class="acc-points">
+                                    <li>Penyederhanaan perizinan usaha ketenagalistrikan (OSS berbasis risiko)</li>
+                                    <li>Perubahan ketentuan sertifikasi instalasi listrik</li>
+                                    <li>Tetap mempertahankan kewajiban SMK3 bagi perusahaan berisiko tinggi</li>
+                                    <li>Sistem perizinan berbasis risiko — instalasi tegangan tinggi tetap berizin penuh</li>
+                                </ul>
+                                <div class="acc-info-row">
+                                    <i class="bi bi-info-circle"></i>
+                                    <span><strong>Lingkup Berlaku:</strong> Seluruh sektor usaha termasuk ketenagalistrikan. Perusahaan dengan risiko tinggi (termasuk PT Power Grid Indonesia) tetap wajib memenuhi standar K3 yang diperketat</span>
+                                </div>
+                                <div class="acc-info-row">
+                                    <i class="bi bi-journal-bookmark"></i>
+                                    <span><strong>Pasal Kunci:</strong> Pasal 81 (perubahan UU Ketenagakerjaan), Pasal 118 (perubahan UU Ketenagalistrikan), Lampiran terkait penyederhanaan perizinan berbasis risiko</span>
+                                </div>
+                                <div class="acc-info-row">
+                                    <i class="bi bi-gavel"></i>
+                                    <span><strong>Sanksi:</strong> Sanksi administratif (peringatan tertulis, denda, penghentian sementara) hingga pencabutan izin usaha sesuai tingkat risiko</span>
+                                </div>
+                                <div class="acc-tags">
+                                    <span class="acc-tag">Omnibus Law</span>
+                                    <span class="acc-tag">OSS</span>
+                                    <span class="acc-tag">Perizinan</span>
+                                    <span class="acc-tag">SMK3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- B. PERATURAN PEMERINTAH & MENTERI -->
+            <div class="law-section" id="permen">
+                <div class="law-section-header reveal">
+                    <div class="section-icon perm">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <div class="section-header-text perm">
+                        <div class="section-label-tag">Bagian B</div>
+                        <h2 class="section-heading">Peraturan Pemerintah &amp; Menteri</h2>
+                        <p class="section-sub">Peraturan pelaksana yang mengatur teknis penerapan K3 kelistrikan secara operasional</p>
+                    </div>
+                </div>
+                <div class="accordion-list">
+                    <!-- PP No. 50 Tahun 2012 -->
+                    <div class="acc-card perm-card reveal" style="transition-delay:.04s">
+                        <div class="acc-trigger" onclick="toggleAcc(this)">
+                            <div class="acc-icon">
+                                <i class="bi bi-diagram-3"></i>
+                            </div>
+                            <div class="acc-meta">
+                                <div class="acc-number">PP No. 50 Tahun 2012</div>
+                                <div class="acc-title">Sistem Manajemen Keselamatan dan Kesehatan Kerja (SMK3)</div>
+                                <div class="acc-subtitle">Peraturan Pemerintah RI</div>
+                            </div>
+                            <div class="acc-right">
+                                <span class="acc-year">2012</span>
+                                <div class="acc-chevron"><i class="bi bi-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="acc-body">
+                            <div class="acc-body-inner grid2">
+                                <div>
+                                    <span class="acc-status berlaku"><i class="bi bi-check-circle"></i> Masih Berlaku</span>
+                                    <p class="acc-desc">Peraturan ini mewajibkan penerapan SMK3 pada perusahaan yang mempekerjakan minimal 100 orang atau yang memiliki tingkat potensi bahaya tinggi. PT Power Grid Indonesia masuk dalam kedua kategori tersebut.</p>
+                                    <ul class="acc-points">
+                                        <li>Kebijakan K3 tertulis dan disahkan pimpinan tertinggi</li>
+                                        <li>Identifikasi bahaya, penilaian, dan pengendalian risiko (IBPR/HIRA)</li>
+                                        <li>Program pelatihan K3 terstruktur dan terdokumentasi</li>
+                                        <li>Audit SMK3 internal dan eksternal secara berkala</li>
+                                    </ul>
+                                    <div class="acc-tags">
+                                        <span class="acc-tag">SMK3</span>
+                                        <span class="acc-tag">HIRA</span>
+                                        <span class="acc-tag">Audit K3</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-clock-history"></i>
+                                        <span><strong>Kewajiban Audit:</strong> Audit eksternal SMK3 dilakukan setiap 3 tahun oleh lembaga audit terakreditasi Kemnaker</span>
+                                    </div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-trophy"></i>
+                                        <span><strong>Penghargaan:</strong> Perusahaan yang memenuhi 166 kriteria SMK3 mendapat bendera emas/perak dari Kemnaker RI</span>
+                                    </div>
+                                    <div class="acc-highlight">
+                                        <i class="bi bi-exclamation-triangle"></i>
+                                        <span><strong>Status Perusahaan:</strong> PT Power Grid Indonesia telah memperoleh Bendera Emas SMK3 dan mempertahankan sertifikat ISO 45001:2018 yang setara.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Permenaker No. 12 Tahun 2015 -->
+                    <div class="acc-card perm-card reveal" style="transition-delay:.07s">
+                        <div class="acc-trigger" onclick="toggleAcc(this)">
+                            <div class="acc-icon">
+                                <i class="bi bi-lightning-charge"></i>
+                            </div>
+                            <div class="acc-meta">
+                                <div class="acc-number">Permenaker No. 12 Tahun 2015</div>
+                                <div class="acc-title">Keselamatan dan Kesehatan Kerja Listrik di Tempat Kerja</div>
+                                <div class="acc-subtitle">Kementerian Ketenagakerjaan RI</div>
+                            </div>
+                            <div class="acc-right">
+                                <span class="acc-year">2015</span>
+                                <div class="acc-chevron"><i class="bi bi-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="acc-body">
+                            <div class="acc-body-inner grid2">
+                                <div>
+                                    <span class="acc-status berlaku"><i class="bi bi-check-circle"></i> Masih Berlaku</span>
+                                    <p class="acc-desc">Regulasi teknis paling spesifik untuk K3 kelistrikan di tempat kerja. Mengatur persyaratan teknis, kompetensi petugas, dan prosedur kerja aman pada instalasi listrik di semua kategori tegangan.</p>
+                                    <ul class="acc-points">
+                                        <li>Persyaratan instalasi listrik sesuai PUIL 2011</li>
+                                        <li>Kewajiban ahli K3 listrik bersertifikat di setiap instalasi</li>
+                                        <li>Prosedur kerja aman (Lockout/Tagout) pada instalasi bertegangan</li>
+                                        <li>Pemeriksaan dan pengujian instalasi listrik secara berkala</li>
+                                    </ul>
+                                    <div class="acc-tags">
+                                        <span class="acc-tag">LOTO</span>
+                                        <span class="acc-tag">Ahli K3 Listrik</span>
+                                        <span class="acc-tag">PUIL</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-person-badge"></i>
+                                        <span><strong>Sertifikasi Wajib:</strong> Ahli K3 Listrik harus memiliki SKP dari Kemnaker untuk instalasi tegangan menengah ke atas</span>
+                                    </div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-calendar-check"></i>
+                                        <span><strong>Pemeriksaan Berkala:</strong> Instalasi listrik wajib diperiksa setiap 1 tahun untuk tegangan rendah dan 2 tahun untuk tegangan menengah</span>
+                                    </div>
+                                    <div class="acc-highlight">
+                                        <i class="bi bi-exclamation-triangle"></i>
+                                        <span><strong>Implementasi:</strong> PT Power Grid Indonesia memiliki 12 Ahli K3 Listrik bersertifikat yang mengelola seluruh instalasi tegangan menengah dan gardu induk.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Permenaker No. 8 Tahun 2020 -->
+                    <div class="acc-card perm-card reveal" style="transition-delay:.10s">
+                        <div class="acc-trigger" onclick="toggleAcc(this)">
+                            <div class="acc-icon">
+                                <i class="bi bi-truck"></i>
+                            </div>
+                            <div class="acc-meta">
+                                <div class="acc-number">Permenaker No. 8 Tahun 2020</div>
+                                <div class="acc-title">Keselamatan Pesawat Angkat dan Angkut</div>
+                                <div class="acc-subtitle">Kementerian Ketenagakerjaan RI</div>
+                            </div>
+                            <div class="acc-right">
+                                <span class="acc-year">2020</span>
+                                <div class="acc-chevron"><i class="bi bi-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="acc-body">
+                            <div class="acc-body-inner single">
+                                <span class="acc-status berlaku"><i class="bi bi-check-circle"></i> Masih Berlaku</span>
+                                <p class="acc-desc">Mengatur keselamatan penggunaan pesawat angkat dan angkut yang digunakan dalam kegiatan maintenance kelistrikan, termasuk crane, forklift, dan aerial work platform (AWP).</p>
+                                <ul class="acc-points">
+                                    <li>Sertifikasi operator alat angkat dan angkut</li>
+                                    <li>Pemeriksaan berkala kondisi teknis alat sebelum dioperasikan</li>
+                                    <li>Batas beban kerja aman (SWL) harus terpasang dan dipatuhi</li>
+                                    <li>Prosedur kerja aman saat pengoperasian di dekat instalasi listrik bertegangan</li>
+                                </ul>
+                                <div class="acc-tags">
+                                    <span class="acc-tag">Operator Crane</span>
+                                    <span class="acc-tag">AWP</span>
+                                    <span class="acc-tag">SWL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Permenaker No. 9 Tahun 2016 -->
+                    <div class="acc-card perm-card reveal" style="transition-delay:.13s">
+                        <div class="acc-trigger" onclick="toggleAcc(this)">
+                            <div class="acc-icon">
+                                <i class="bi bi-arrow-down-up"></i>
+                            </div>
+                            <div class="acc-meta">
+                                <div class="acc-number">Permenaker No. 9 Tahun 2016</div>
+                                <div class="acc-title">Keselamatan Kerja pada Ketinggian</div>
+                                <div class="acc-subtitle">Kementerian Ketenagakerjaan RI</div>
+                            </div>
+                            <div class="acc-right">
+                                <span class="acc-year">2016</span>
+                                <div class="acc-chevron"><i class="bi bi-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="acc-body">
+                            <div class="acc-body-inner single">
+                                <span class="acc-status berlaku"><i class="bi bi-check-circle"></i> Masih Berlaku</span>
+                                <p class="acc-desc">Sangat relevan bagi kegiatan PT Power Grid Indonesia yang sering melibatkan pekerjaan di ketinggian, seperti pemeliharaan tiang listrik, jaringan transmisi udara, dan peralatan gardu induk.</p>
+                                <ul class="acc-points">
+                                    <li>Kewajiban penggunaan full body harness untuk ketinggian di atas 1,8 meter</li>
+                                    <li>Anchor point harus mampu menahan beban minimal 22 kN</li>
+                                    <li>Job Safety Analysis (JSA) wajib sebelum pekerjaan di ketinggian</li>
+                                    <li>Sertifikasi teknisi bekerja di ketinggian</li>
+                                    <li>Rescue plan wajib tersedia sebelum pekerjaan dimulai</li>
+                                </ul>
+                                <div class="acc-highlight">
+                                    <i class="bi bi-exclamation-triangle"></i>
+                                    <span><strong>Penting:</strong> Seluruh teknisi yang bekerja pada tiang listrik wajib tersertifikasi dan menggunakan harness yang telah diinspeksi.</span>
+                                </div>
+                                <div class="acc-tags">
+                                    <span class="acc-tag">Full Body Harness</span>
+                                    <span class="acc-tag">Anchor Point</span>
+                                    <span class="acc-tag">JSA</span>
+                                    <span class="acc-tag">Rescue Plan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Permen ESDM No. 10 Tahun 2021 -->
+                    <div class="acc-card perm-card reveal" style="transition-delay:.16s">
+                        <div class="acc-trigger" onclick="toggleAcc(this)">
+                            <div class="acc-icon">
+                                <i class="bi bi-cpu"></i>
+                            </div>
+                            <div class="acc-meta">
+                                <div class="acc-number">Permen ESDM No. 10 Tahun 2021</div>
+                                <div class="acc-title">Keselamatan Ketenagalistrikan</div>
+                                <div class="acc-subtitle">Kementerian ESDM RI</div>
+                            </div>
+                            <div class="acc-right">
+                                <span class="acc-year">2021</span>
+                                <div class="acc-chevron"><i class="bi bi-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="acc-body">
+                            <div class="acc-body-inner grid2">
+                                <div>
+                                    <span class="acc-status berlaku"><i class="bi bi-check-circle"></i> Masih Berlaku</span>
+                                    <p class="acc-desc">Peraturan teknis terbaru dari Kementerian ESDM yang memperbarui dan memperketat standar keselamatan ketenagalistrikan.</p>
+                                    <ul class="acc-points">
+                                        <li>Standar keselamatan pembangkitan, transmisi, dan distribusi</li>
+                                        <li>Persyaratan teknis instalasi tegangan tinggi dan ekstra tinggi</li>
+                                        <li>Kewajiban implementasi sistem proteksi berlapis</li>
+                                        <li>Standar kompetensi personel K3 ketenagalistrikan</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-globe"></i>
+                                        <span><strong>Cakupan:</strong> Berlaku untuk seluruh instalasi mulai dari pembangkitan hingga distribusi tegangan rendah</span>
+                                    </div>
+                                    <div class="acc-highlight">
+                                        <i class="bi bi-exclamation-triangle"></i>
+                                        <span><strong>Pembaruan Kunci:</strong> Memasukkan ketentuan tentang keselamatan siber (cyber security) untuk sistem SCADA dan kontrol otomatis jaringan listrik.</span>
+                                    </div>
+                                    <div class="acc-tags">
+                                        <span class="acc-tag">K2 Listrik</span>
+                                        <span class="acc-tag">SCADA Security</span>
+                                        <span class="acc-tag">ESDM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Permen ESDM No. 36 Tahun 2014 -->
+                    <div class="acc-card perm-card reveal" style="transition-delay:.19s">
+                        <div class="acc-trigger" onclick="toggleAcc(this)">
+                            <div class="acc-icon">
+                                <i class="bi bi-book"></i>
+                            </div>
+                            <div class="acc-meta">
+                                <div class="acc-number">Permen ESDM No. 36 Tahun 2014</div>
+                                <div class="acc-title">Pemberlakuan PUIL 2011 sebagai Standar Wajib</div>
+                                <div class="acc-subtitle">Kementerian ESDM RI</div>
+                            </div>
+                            <div class="acc-right">
+                                <span class="acc-year">2014</span>
+                                <div class="acc-chevron"><i class="bi bi-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="acc-body">
+                            <div class="acc-body-inner grid2">
+                                <div>
+                                    <span class="acc-status berlaku"><i class="bi bi-check-circle"></i> Masih Berlaku</span>
+                                    <p class="acc-desc">Peraturan ini memberlakukan SNI 0225:2011 (Persyaratan Umum Instalasi Listrik / PUIL 2011) sebagai standar wajib untuk seluruh instalasi listrik di Indonesia, termasuk panel listrik, gardu induk, dan jaringan distribusi.</p>
+                                    <ul class="acc-points">
+                                        <li>PUIL 2011 wajib diterapkan pada seluruh instalasi listrik baru maupun rehabilitasi</li>
+                                        <li>Standar teknis untuk panel listrik, gardu induk, dan jaringan distribusi</li>
+                                        <li>Ketentuan pengamanan terhadap bahaya kebakaran akibat korsleting</li>
+                                        <li>Persyaratan sistem pentanahan (grounding) yang aman</li>
+                                        <li>Sanksi administratif bagi pelanggar standar PUIL</li>
+                                    </ul>
+                                    <div class="acc-tags">
+                                        <span class="acc-tag">PUIL 2011</span>
+                                        <span class="acc-tag">SNI 0225</span>
+                                        <span class="acc-tag">Standar Wajib</span>
+                                        <span class="acc-tag">Kebakaran</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-info-circle"></i>
+                                        <span><strong>Lingkup Berlaku:</strong> Seluruh instalasi listrik di Indonesia, termasuk di kawasan industri, perkantoran, dan pemukiman yang dikelola PT Power Grid Indonesia</span>
+                                    </div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-journal-bookmark"></i>
+                                        <span><strong>Pasal Kunci:</strong> Pasal 2 (pemberlakuan PUIL 2011), Pasal 3 (kewajiban pelaku usaha), Pasal 5 (pengawasan dan pembinaan)</span>
+                                    </div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-gavel"></i>
+                                        <span><strong>Sanksi:</strong> Peringatan tertulis, denda administratif, hingga penghentian sementara operasional instalasi yang tidak memenuhi standar PUIL</span>
+                                    </div>
+                                    <div class="acc-highlight">
+                                        <i class="bi bi-exclamation-triangle"></i>
+                                        <span><strong>Relevansi:</strong> Seluruh instalasi listrik PT Power Grid Indonesia wajib memenuhi standar PUIL 2011 untuk mencegah risiko kecelakaan listrik dan kebakaran akibat arus pendek.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kepdirjen No. 311 Tahun 2002 & KEP. 48/PPK/K3/VIII/2015 -->
+                    <div class="acc-card perm-card reveal" style="transition-delay:.22s">
+                        <div class="acc-trigger" onclick="toggleAcc(this)">
+                            <div class="acc-icon">
+                                <i class="bi bi-person-badge"></i>
+                            </div>
+                            <div class="acc-meta">
+                                <div class="acc-number">Kepdirjen No. 311 Tahun 2002 &amp; KEP. 48/PPK/K3/VIII/2015</div>
+                                <div class="acc-title">Kompetensi &amp; Sertifikasi Ahli K3 Listrik</div>
+                                <div class="acc-subtitle">Kementerian Ketenagakerjaan RI</div>
+                            </div>
+                            <div class="acc-right">
+                                <span class="acc-year">2002/2015</span>
+                                <div class="acc-chevron"><i class="bi bi-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="acc-body">
+                            <div class="acc-body-inner grid2">
+                                <div>
+                                    <span class="acc-status berlaku"><i class="bi bi-check-circle"></i> Masih Berlaku</span>
+                                    <p class="acc-desc">Peraturan teknis ini mengatur tentang kompetensi, kualifikasi, dan sertifikasi bagi Ahli K3 Listrik dan Teknisi K3 Listrik yang wajib dimiliki perusahaan kelistrikan untuk mengawasi operasional instalasi tegangan tinggi.</p>
+                                    <ul class="acc-points">
+                                        <li>Kualifikasi dan persyaratan menjadi Ahli K3 Listrik bersertifikat</li>
+                                        <li>Kewajiban memiliki petugas K3 listrik bersertifikat di setiap instalasi</li>
+                                        <li>Ruang lingkup tugas pengawasan di ruang kontrol, panel listrik, dan gardu induk</li>
+                                        <li>Standar kompetensi teknisi maintenance jaringan tegangan tinggi</li>
+                                        <li>Pembinaan dan pengawasan berkala terhadap petugas K3 listrik</li>
+                                    </ul>
+                                    <div class="acc-tags">
+                                        <span class="acc-tag">Ahli K3 Listrik</span>
+                                        <span class="acc-tag">Sertifikasi</span>
+                                        <span class="acc-tag">Kompetensi Teknisi</span>
+                                        <span class="acc-tag">Pengawasan</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-info-circle"></i>
+                                        <span><strong>Lingkup Berlaku:</strong> Seluruh perusahaan kelistrikan yang mengoperasikan instalasi tegangan menengah ke atas, termasuk PT Power Grid Indonesia</span>
+                                    </div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-journal-bookmark"></i>
+                                        <span><strong>Pasal Kunci:</strong> Lampiran I (kualifikasi Ahli K3 Listrik), Lampiran II (ruang lingkup tugas), Lampiran III (standar kompetensi teknisi)</span>
+                                    </div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-gavel"></i>
+                                        <span><strong>Sanksi:</strong> Teguran tertulis hingga pembekuan izin operasional bagi perusahaan yang tidak memiliki petugas K3 listrik bersertifikat</span>
+                                    </div>
+                                    <div class="acc-highlight">
+                                        <i class="bi bi-exclamation-triangle"></i>
+                                        <span><strong>Implementasi:</strong> PT Power Grid Indonesia memiliki 12 Ahli K3 Listrik bersertifikat dan 25 teknisi bersertifikat yang bertugas mengawasi operasional gardu induk, ruang kontrol, dan kegiatan maintenance.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C. STANDAR TEKNIS -->
+            <div class="law-section" id="standar">
+                <div class="law-section-header reveal">
+                    <div class="section-icon std">
+                        <i class="bi bi-diagram-3"></i>
+                    </div>
+                    <div class="section-header-text std">
+                        <div class="section-label-tag">Bagian C</div>
+                        <h2 class="section-heading">Standar Teknis</h2>
+                        <p class="section-sub">Standar nasional dan internasional yang menjadi acuan teknis operasional kelistrikan</p>
+                    </div>
+                </div>
+                <div class="accordion-list">
+                    <!-- SNI PUIL 2011 -->
+                    <div class="acc-card std-card reveal" style="transition-delay:.04s">
+                        <div class="acc-trigger" onclick="toggleAcc(this)">
+                            <div class="acc-icon">
+                                <i class="bi bi-book"></i>
+                            </div>
+                            <div class="acc-meta">
+                                <div class="acc-number">SNI 0225:2011 / PUIL 2011</div>
+                                <div class="acc-title">Persyaratan Umum Instalasi Listrik (PUIL)</div>
+                                <div class="acc-subtitle">Badan Standardisasi Nasional (BSN)</div>
+                            </div>
+                            <div class="acc-right">
+                                <span class="acc-year">2011</span>
+                                <div class="acc-chevron"><i class="bi bi-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="acc-body">
+                            <div class="acc-body-inner grid2">
+                                <div>
+                                    <span class="acc-status berlaku"><i class="bi bi-check-circle"></i> Masih Berlaku</span>
+                                    <p class="acc-desc">PUIL adalah standar teknis paling fundamental untuk instalasi listrik di Indonesia. Menjadi rujukan wajib bagi setiap perancangan, pemasangan, pengoperasian, dan pemeliharaan instalasi listrik.</p>
+                                    <ul class="acc-points">
+                                        <li>Persyaratan desain dan pemasangan kabel</li>
+                                        <li>Standar proteksi terhadap sentuh langsung dan tak langsung</li>
+                                        <li>Persyaratan sistem pembumian (grounding)</li>
+                                        <li>Ketentuan instalasi di lingkungan khusus</li>
+                                    </ul>
+                                    <div class="acc-tags">
+                                        <span class="acc-tag">PUIL</span>
+                                        <span class="acc-tag">Grounding</span>
+                                        <span class="acc-tag">Proteksi</span>
+                                        <span class="acc-tag">SNI</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-globe"></i>
+                                        <span><strong>Adopsi Standar:</strong> Mengadopsi standar IEC 60364 yang berlaku secara internasional</span>
+                                    </div>
+                                    <div class="acc-info-row">
+                                        <i class="bi bi-arrow-repeat"></i>
+                                        <span><strong>Pembaruan:</strong> Revisi PUIL 2020 sedang dalam proses finalisasi</span>
+                                    </div>
+                                    <div class="acc-highlight">
+                                        <i class="bi bi-exclamation-triangle"></i>
+                                        <span><strong>Wajib Dipatuhi:</strong> Setiap instalasi baru PT Power Grid Indonesia harus mengacu PUIL 2011.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand-logo">
+                    <div class="icon-wrap">
+                        <img src="img/logo.png" alt="Logo Loader">
+                    </div>
+                    <div class="footer-brand-name">
+                        PT Power Grid Indonesia
+                        <small>Sistem Informasi K3</small>
+                    </div>
+                </div>
+                <p class="footer-tagline">Berkomitmen mewujudkan lingkungan kerja yang aman, sehat, dan produktif di seluruh jaringan infrastruktur kelistrikan nasional.</p>
+                <div class="footer-socials">
+                    <div class="social-btn"><i class="bi bi-twitter-x"></i></div>
+                    <div class="social-btn"><i class="bi bi-linkedin"></i></div>
+                    <div class="social-btn"><i class="bi bi-youtube"></i></div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navigasi</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil Perusahaan</a></li>
+                    <li><a href="hukum.html">Landasan Hukum</a></li>
+                    <li><a href="denah.html">Denah Lokasi</a></li>
+                    <li><a href="apd_sop.html">APD &amp; SOP</a></li>
+                    <li><a href="video.html">Video Edukasi</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kontak Perusahaan</h4>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <p><strong>Alamat</strong>Jl. Candi Raya No. 45, Kawasan Industri Malang, Jawa Timur 65123</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="bi bi-telephone-fill"></i>
+                        <p><strong>Telepon</strong>+62 341 5555 6789</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <p><strong>Email</strong>k3@powergrid.co.id</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> PT Power Grid Indonesia. Seluruh hak cipta dilindungi undang-undang.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('currentYear').innerText = new Date().getFullYear();
+
+        // Sticky navbar
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 20);
+        });
+
+        // Mobile menu
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('open');
+        }
+        document.querySelectorAll('.nav-links a').forEach(a => {
+            a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+        });
+
+        // Accordion
+        function toggleAcc(trigger) {
+            const card = trigger.closest('.acc-card');
+            const isOpen = card.classList.contains('open');
+            card.closest('.accordion-list').querySelectorAll('.acc-card.open').forEach(c => {
+                if (c !== card) c.classList.remove('open');
+            });
+            card.classList.toggle('open', !isOpen);
+        }
+
+        // TOC active on scroll
+        function setActive(el) {
+            document.querySelectorAll('.toc-item').forEach(t => t.classList.remove('active'));
+            el.classList.add('active');
+        }
+        const sections = ['uu', 'permen', 'standar'].map(id => document.getElementById(id));
+        window.addEventListener('scroll', () => {
+            let current = 'uu';
+            sections.forEach(s => {
+                if (s && window.scrollY >= s.offsetTop - 130) current = s.id;
+            });
+            document.querySelectorAll('.toc-item').forEach(t => {
+                t.classList.toggle('active', t.getAttribute('href') === '#' + current);
+            });
+        });
+
+        // Scroll reveal
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.reveal, .reveal-left').forEach(el => observer.observe(el));
+
+        // Open first accordion in each section
+        document.querySelectorAll('.accordion-list').forEach(list => {
+            const first = list.querySelector('.acc-card');
+            if (first) first.classList.add('open');
+        });
+    </script>
+</body>
+</html>

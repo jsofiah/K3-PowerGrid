@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Denah Lokasi — PT Power Grid Indonesia</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="style/index.css" />
+<link rel="stylesheet" href="style/denah.css" />
+</head>
+<body>
+<nav class="navbar" id="navbar">
+    <a class="nav-logo" href="index.html">
+    <div class="nav-logo-icon">
+        <img src="img/logo.png" alt="Logo Navbar">
+    </div>
+    <div class="nav-logo-text">
+        <span>Power Grid</span>
+    </div>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="profil.html">Profil Perusahaan</a></li>
+    <li><a href="hukum.html">Landasan Hukum</a></li>
+    <li><a href="denah.html" class="active">Denah Lokasi</a></li>
+    <li><a href="apd_sop.html">APD & SOP</a></li>
+    <li><a href="video.html" class="nav-cta">Video Edukasi</a></li>
+    </ul>
+
+    <div class="nav-burger" id="burger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+</nav>
+
+<header class="page-header">
+    <div class="page-header-bg"></div>
+    <div class="page-header-content">
+    <div class="breadcrumb">
+        <a href="index.html">Beranda</a>
+        <i class="bi bi-chevron-right"></i>
+        <span>Denah Lokasi</span>
+    </div>
+    <div class="page-header-badge">
+        <i class="bi bi-map"></i>
+        Safety Map
+    </div>
+    <h1 class="page-header-title">Denah &amp; <em>Peta Keselamatan</em></h1>
+    <p class="page-header-desc">Peta keselamatan (safety map) area PT Power Grid Indonesia yang menunjukkan jalur evakuasi, titik kumpul, lokasi APAR, P3K, dan area tegangan tinggi.</p>
+    <div class="header-chips">
+        <div class="header-chip yc">
+        <i class="bi bi-geo-alt"></i>
+        2 Safety Map Tersedia
+        </div>
+        <div class="header-chip">
+        <i class="bi bi-zoom-in"></i>
+        Klik untuk Perbesar
+        </div>
+        <div class="header-chip">
+        <i class="bi bi-calendar-check"></i>
+        Diperbarui 2026
+        </div>
+    </div>
+    </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<div class="page-content">
+
+    <!-- MAPS -->
+    <div class="maps-section" id="maps">
+    <div class="maps-header reveal">
+        <div class="section-label">Peta Keselamatan</div>
+        <h2 class="section-title">Safety Map <em>Area Operasional</em></h2>
+        <p class="section-desc">Klik pada gambar atau tombol perbesar untuk melihat detail peta keselamatan dalam ukuran penuh. Setiap area operasional dilengkapi peta keselamatan yang diperbarui secara berkala.</p>
+    </div>
+
+    <div class="maps-grid">
+        <!-- MAP 1 -->
+        <div class="map-card reveal" style="transition-delay:.05s">
+        <div class="map-img-wrap" onclick="openLightbox(0)">
+            <img 
+            src="img/gedung_utama.png" 
+            alt="Safety Map Gedung Utama & Gardu Induk"
+            style="width:100%; height:100%; object-fit:contain; background:#0f1f3d;"
+            >
+            <div class="map-img-overlay">
+            <div class="zoom-hint">
+                <i class="bi bi-zoom-in"></i>
+                Klik untuk perbesar
+            </div>
+            </div>
+            <div class="map-badge active-badge">
+            <i class="bi bi-building"></i>
+            Gedung Lantai 1 & 2
+            </div>
+            <div class="map-scale">
+            <div class="scale-bar"></div>
+            1 : 100
+            </div>
+        </div>
+        <div class="map-body">
+            <div class="map-number">Peta Keselamatan — 01</div>
+            <h3 class="map-title">Safety Map Gedung Utama &amp; Gardu Induk</h3>
+            <p class="map-caption">Denah keselamatan area gedung utama PT Power Grid Indonesia meliputi ruang kontrol distribusi, gardu induk, ruang panel listrik, gudang peralatan, area maintenance, dan kantor administrasi. Menampilkan jalur evakuasi, lokasi APAR, P3K, titik kumpul, dan area tegangan tinggi.</p>
+            <div class="map-meta">
+            <div class="map-meta-item"><i class="bi bi-grid"></i> Skala 1:100</div>
+            <div class="map-meta-item"><i class="bi bi-calendar"></i> Diperbarui Juni 2026</div>
+            <div class="map-meta-item"><i class="bi bi-layers"></i> GedungLantai 1 & 2</div>
+            </div>
+            <div class="map-action-row">
+            <button class="btn-zoom" onclick="openLightbox(0)"><i class="bi bi-zoom-in"></i> Perbesar Peta</button>
+            <button class="btn-download"><i class="bi bi-download"></i> Unduh</button>
+            </div>
+        </div>
+        </div>
+
+        <!-- MAP 2 -->
+        <div class="map-card reveal" style="transition-delay:.1s">
+        <div class="map-img-wrap" onclick="openLightbox(1)">
+        <img 
+        src="img/outdoor.png" 
+        alt="Safety Map Area Outdoor & Switchyard"
+        style="width:100%; height:100%; object-fit:contain; background:#0f1f3d;"
+        >
+            <div class="map-img-overlay">
+            <div class="zoom-hint"><i class="bi bi-zoom-in"></i> Klik untuk perbesar</div>
+            </div>
+            <div class="map-badge"><i class="bi bi-tree"></i> Area Outdoor</div>
+            <div class="map-scale"><div class="scale-bar"></div>1 : 100</div>
+        </div>
+        <div class="map-body">
+            <div class="map-number">Peta Keselamatan — 02</div>
+            <h3 class="map-title">Safety Map Area Outdoor &amp; Switchyard</h3>
+            <p class="map-caption">Peta keselamatan kawasan luar gedung PT Power Grid Indonesia mencakup area tegangan tinggi 150 kV, switchyard, transformator, area parkir dan titik kumpul utama, serta jalur evakuasi menuju pintu utama (gate).</p>
+            <div class="map-meta">
+            <div class="map-meta-item"><i class="bi bi-grid"></i> Skala 1:100</div>
+            <div class="map-meta-item"><i class="bi bi-calendar"></i> Diperbarui Juni 2026</div>
+            <div class="map-meta-item"><i class="bi bi-geo-alt"></i> Area Outdoor</div>
+            </div>
+            <div class="map-action-row">
+            <button class="btn-zoom" onclick="openLightbox(1)"><i class="bi bi-zoom-in"></i> Perbesar Peta</button>
+            <button class="btn-download"><i class="bi bi-download"></i> Unduh</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- LEGENDA -->
+    <div class="legenda-section reveal" id="legenda">
+    <div class="legenda-header">
+        <div>
+        <div class="section-label">Simbol Keselamatan</div>
+        <h2 class="section-title">Legenda <em>Safety Map</em></h2>
+        <p class="section-desc">Makna setiap simbol dan warna yang digunakan pada peta keselamatan PT Power Grid Indonesia sesuai standar K3 nasional dan ISO 7010.</p>
+        </div>
+        <div class="legenda-header-right">
+        <div class="legenda-live-badge"><div class="live-dot"></div>Aktif &amp; Diperbarui</div>
+        </div>
+    </div>
+
+    <div class="legenda-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+
+        <!-- 1. APAR -->
+        <div class="legend-card apar">
+            <div class="legend-card-top">
+                <div class="legend-icon-wrap"><i class="bi bi-fire"></i></div>
+                <div class="legend-card-label">APAR</div>
+            </div>
+            <div class="legend-card-bottom">
+                <p class="legend-desc">Alat Pemadam Api Ringan tersebar di gardu induk, ruang panel, ruang kontrol, dan gudang peralatan. Untuk antisipasi kebakaran akibat arus pendek atau minyak trafo.</p>
+                <div class="legend-color-bar"></div>
+            </div>
+        </div>
+
+        <!-- 2. Area Tegangan Tinggi -->
+        <div class="legend-card tegangan">
+            <div class="legend-card-top">
+                <div class="legend-icon-wrap"><i class="bi bi-lightning-charge"></i></div>
+                <div class="legend-card-label">Area Tegangan Tinggi</div>
+            </div>
+            <div class="legend-card-bottom">
+                <p class="legend-desc">Zona dengan tegangan tinggi 150 kV di gardu induk dan switchyard. Akses terbatas, wajib APD lengkap, dan berisiko sengatan listrik serta busur api.</p>
+                <div class="legend-color-bar"></div>
+            </div>
+        </div>
+
+        <!-- 3. APD Wajib -->
+        <div class="legend-card apd">
+            <div class="legend-card-top">
+                <div class="legend-icon-wrap"><i class="bi bi-shield"></i></div>
+                <div class="legend-card-label">APD Wajib</div>
+            </div>
+            <div class="legend-card-bottom">
+                <p class="legend-desc">Helm listrik kelas E, sarung tangan isolasi, sepatu isolasi, pelindung muka tahan api. Serta pelindung telinga (earmuff) untuk area gardu induk.</p>
+                <div class="legend-color-bar"></div>
+            </div>
+        </div>
+
+        <!-- 4. Bahaya Busur Api -->
+        <div class="legend-card busur">
+            <div class="legend-card-top">
+                <div class="legend-icon-wrap"><i class="bi bi-exclamation-triangle"></i></div>
+                <div class="legend-card-label">Bahaya Busur Api</div>
+            </div>
+            <div class="legend-card-bottom">
+                <p class="legend-desc">Risiko arc flash (percikan api) saat pemutusan beban listrik skala besar. Operasikan dari jarak jauh atau gunakan tongkat operasi (hot stick).</p>
+                <div class="legend-color-bar"></div>
+            </div>
+        </div>
+
+        <!-- 5. Bahaya Minyak Trafo -->
+        <div class="legend-card minyak">
+            <div class="legend-card-top">
+                <div class="legend-icon-wrap"><i class="bi bi-droplet"></i></div>
+                <div class="legend-card-label">Bahaya Minyak Trafo</div>
+            </div>
+            <div class="legend-card-bottom">
+                <p class="legend-desc">Minyak trafo bersifat mudah terbakar dan beracun jika terhirup. Dilengkapi bak penampung dan pemeriksaan kebocoran secara rutin.</p>
+                <div class="legend-color-bar"></div>
+            </div>
+        </div>
+
+        <!-- 6. Medan Elektromagnetik -->
+        <div class="legend-card medan">
+            <div class="legend-card-top">
+                <div class="legend-icon-wrap"><i class="bi bi-wifi"></i></div>
+                <div class="legend-card-label">Medan Elektromagnetik</div>
+            </div>
+            <div class="legend-card-bottom">
+                <p class="legend-desc">Paparan medan elektromagnetik kuat dari trafo dan gardu induk. Batasi waktu kerja di dekat sumber dan pasang rambu peringatan.</p>
+                <div class="legend-color-bar"></div>
+            </div>
+        </div>
+
+        <!-- 7. Bahaya Kebisingan -->
+        <div class="legend-card bising">
+            <div class="legend-card-top">
+                <div class="legend-icon-wrap"><i class="bi bi-volume-up"></i></div>
+                <div class="legend-card-label">Bahaya Kebisingan</div>
+            </div>
+            <div class="legend-card-bottom">
+                <p class="legend-desc">Kebisingan dari dengungan trafo dan peralatan gardu induk. Wajib menggunakan pelindung telinga (earmuff) saat beraktivitas di area tersebut.</p>
+                <div class="legend-color-bar"></div>
+            </div>
+        </div>
+
+        <!-- 8. Grounding / Pentanahan -->
+        <div class="legend-card ground">
+            <div class="legend-card-top">
+                <div class="legend-icon-wrap"><i class="bi bi-diagram-3"></i></div>
+                <div class="legend-card-label">Grounding</div>
+            </div>
+            <div class="legend-card-bottom">
+                <p class="legend-desc">Sistem grounding wajib berfungsi sempurna. Lakukan pengujian secara berkala minimal satu bulan sekali untuk mencegah kejutan listrik.</p>
+                <div class="legend-color-bar"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="info-strip">
+        <div class="info-strip-item"><div class="info-strip-icon"><i class="bi bi-check-circle"></i></div><div class="info-strip-text"><h4>Standar ISO 7010</h4><p>Seluruh simbol safety map mengacu standar internasional ISO 7010 tentang tanda-tanda keselamatan.</p></div></div>
+        <div class="info-strip-item"><div class="info-strip-icon"><i class="bi bi-calendar-week"></i></div><div class="info-strip-text"><h4>Pembaruan Berkala</h4><p>Safety map diperbarui setiap tahun atau setiap ada perubahan tata letak fasilitas yang signifikan.</p></div></div>
+        <div class="info-strip-item"><div class="info-strip-icon"><i class="bi bi-printer"></i></div><div class="info-strip-text"><h4>Lokasi Fisik</h4><p>Peta fisik dipasang di setiap pintu masuk ruangan dan area strategis dalam format cetak A2 laminasi.</p></div></div>
+    </div>
+    </div>
+
+    <!-- EMERGENCY BANNER -->
+    <div class="emergency-banner reveal">
+    <div class="emergency-left">
+        <div class="emergency-icon"><i class="bi bi-exclamation-triangle"></i></div>
+        <div class="emergency-text">
+        <h3>Prosedur Darurat — Ingat 3 Langkah!</h3>
+        <p><strong>1. Tetap Tenang</strong> &nbsp;·&nbsp; <strong>2. Ikuti Jalur Hijau</strong> &nbsp;·&nbsp; <strong>3. Kumpul di Titik M</strong> &nbsp;&nbsp;|&nbsp;&nbsp; Hubungi: <strong>Emergency +62 341 5555 911</strong></p>
+        </div>
+    </div>
+    <div class="emergency-right">
+        <a href="apd_sop.html" class="btn-emergency"><i class="bi bi-shield"></i> Prosedur SOP</a>
+        <a href="hukum.html" class="btn-emergency-outline"><i class="bi bi-file-text"></i> Regulasi K3</a>
+    </div>
+    </div>
+</div>
+
+<!-- FOOTER (sama persis dengan halaman Landasan Hukum) -->
+<footer class="footer">
+    <div class="footer-grid">
+        <div>
+            <div class="footer-brand-logo">
+                <div class="icon-wrap">
+                    <img src="img/logo.png" alt="Logo Loader">
+                </div>
+                <div class="footer-brand-name">
+                    PT Power Grid Indonesia
+                    <small>Sistem Informasi K3</small>
+                </div>
+            </div>
+            <p class="footer-tagline">Berkomitmen mewujudkan lingkungan kerja yang aman, sehat, dan produktif di seluruh jaringan infrastruktur kelistrikan nasional.</p>
+            <div class="footer-socials">
+                <div class="social-btn"><i class="bi bi-twitter-x"></i></div>
+                <div class="social-btn"><i class="bi bi-linkedin"></i></div>
+                <div class="social-btn"><i class="bi bi-youtube"></i></div>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Navigasi</h4>
+            <ul class="footer-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil Perusahaan</a></li>
+                <li><a href="hukum.html">Landasan Hukum</a></li>
+                <li><a href="denah.html">Denah Lokasi</a></li>
+                <li><a href="apd_sop.html">APD &amp; SOP</a></li>
+                <li><a href="video.html">Video Edukasi</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Kontak Perusahaan</h4>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <p><strong>Alamat</strong>Jl. Candi Raya No. 45, Kawasan Industri Malang, Jawa Timur 65123</p>
+                </div>
+                <div class="contact-item">
+                    <i class="bi bi-telephone-fill"></i>
+                    <p><strong>Telepon</strong>+62 341 5555 6789</p>
+                </div>
+                <div class="contact-item">
+                    <i class="bi bi-envelope-fill"></i>
+                    <p><strong>Email</strong>k3@powergrid.co.id</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> PT Power Grid Indonesia. Seluruh hak cipta dilindungi undang-undang.</p>
+    </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="handleLightboxClick(event)">
+    <div class="lightbox-inner" id="lightboxInner">
+    <div class="lb-toolbar">
+        <div class="lb-toolbar-left"><div class="lb-logo"><i class="bi bi-lightning-charge-fill"></i></div><div class="lb-title-block"><h4 id="lbTitle">Safety Map — Gedung Utama</h4><p id="lbSub">PT Power Grid Indonesia · Klik &amp; geser untuk menjelajahi</p></div></div>
+        <div class="lb-toolbar-right">
+        <div class="lb-btn" onclick="zoomIn()" title="Perbesar"><i class="bi bi-zoom-in"></i></div>
+        <div class="lb-btn" onclick="zoomOut()" title="Perkecil"><i class="bi bi-zoom-out"></i></div>
+        <div class="lb-btn" onclick="resetZoom()" title="Reset"><i class="bi bi-arrow-repeat"></i></div>
+        <div class="lb-close" onclick="closeLightbox()" title="Tutup"><i class="bi bi-x-lg"></i></div>
+        </div>
+    </div>
+    <div class="lb-img-panel" id="lbImgPanel">
+        <img id="lbImg" src="" alt="Safety Map" draggable="false"/>
+        <div class="lb-zoom-controls"><div class="lb-zoom-btn" onclick="zoomIn()"><i class="bi bi-plus-lg"></i></div><div class="lb-zoom-level" id="lbZoomLevel">100%</div><div class="lb-zoom-btn" onclick="zoomOut()"><i class="bi bi-dash-lg"></i></div></div>
+        <div class="lb-nav lb-prev" onclick="navLightbox(-1)"><i class="bi bi-chevron-left"></i></div>
+        <div class="lb-nav lb-next" onclick="navLightbox(1)"><i class="bi bi-chevron-right"></i></div>
+    </div>
+    <div class="lb-info"><div class="lb-caption" id="lbCaption"><strong>Peta 1:</strong> Safety Map Gedung Utama &amp; Gardu Induk</div><div class="lb-counter" id="lbCounter">1 / 2</div></div>
+    </div>
+</div>
+
+<script>
+    // Set current year
+    document.getElementById('currentYear').innerText = new Date().getFullYear();
+
+    // Navbar sticky
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
+
+    // Mobile menu
+    function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
+    document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open')));
+
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } }); }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+
+    // Lightbox data
+    const mapData = [
+    { title: 'Safety Map — Gedung Utama & Gardu Induk', sub: 'PT Power Grid Indonesia · Lantai 1 · Skala 1:500', caption: '<strong>Peta 1:</strong> Safety Map Gedung Utama & Gardu Induk — Area tegangan tinggi, APAR, jalur evakuasi, titik kumpul' },
+    { title: 'Safety Map — Area Outdoor & Switchyard', sub: 'PT Power Grid Indonesia · Area Luar · Skala 1:1000', caption: '<strong>Peta 2:</strong> Safety Map Area Outdoor & Switchyard — Tegangan 150 kV, muster point, jalur evakuasi ke pintu utama' }
+    ];
+
+    let currentMap = 0, zoomLevel = 1, isDragging = false, dragStart = { x: 0, y: 0 }, imgPos = { x: 0, y: 0 };
+
+    function openLightbox(idx) { currentMap = idx; loadLightboxMap(idx); document.getElementById('lightbox').classList.add('active'); document.body.style.overflow = 'hidden'; }
+    function closeLightbox() { document.getElementById('lightbox').classList.remove('active'); document.body.style.overflow = ''; resetZoom(); }
+    function handleLightboxClick(e) { if (e.target === document.getElementById('lightbox')) closeLightbox(); }
+    function navLightbox(dir) { currentMap = (currentMap + dir + 2) % 2; loadLightboxMap(currentMap); resetZoom(); }
+    function loadLightboxMap(idx) {
+    const d = mapData[idx];
+    document.getElementById('lbTitle').textContent = d.title;
+    document.getElementById('lbSub').textContent = d.sub;
+    document.getElementById('lbCaption').innerHTML = d.caption;
+    document.getElementById('lbCounter').textContent = (idx + 1) + ' / 2';
+        let imageSrc = '';
+        if (idx === 0) {
+            imageSrc = 'img/gedung_utama.png';
+        } else if (idx === 1) {
+            imageSrc = 'img/outdoor.png';
+        }
+        
+        document.getElementById('lbImg').src = imageSrc;
+        document.getElementById('lbImg').style.transform = 'translate(0,0) scale(1)';
+    }
+    
+    function zoomIn() { zoomLevel = Math.min(zoomLevel + 0.25, 4); applyZoom(); }
+    function zoomOut() { zoomLevel = Math.max(zoomLevel - 0.25, 0.5); applyZoom(); }
+    function resetZoom() { zoomLevel = 1; imgPos = { x: 0, y: 0 }; applyZoom(); }
+    function applyZoom() { const img = document.getElementById('lbImg'); img.style.transform = `translate(${imgPos.x}px,${imgPos.y}px) scale(${zoomLevel})`; document.getElementById('lbZoomLevel').textContent = Math.round(zoomLevel * 100) + '%'; }
+    const panel = document.getElementById('lbImgPanel');
+    panel.addEventListener('mousedown', e => { if (e.target.closest('.lb-nav') || e.target.closest('.lb-zoom-controls')) return; isDragging = true; dragStart = { x: e.clientX - imgPos.x, y: e.clientY - imgPos.y }; panel.style.cursor = 'grabbing'; });
+    document.addEventListener('mousemove', e => { if (!isDragging) return; imgPos = { x: e.clientX - dragStart.x, y: e.clientY - dragStart.y }; applyZoom(); });
+    document.addEventListener('mouseup', () => { isDragging = false; if(panel) panel.style.cursor = 'grab'; });
+    panel.addEventListener('wheel', e => { e.preventDefault(); e.deltaY < 0 ? zoomIn() : zoomOut(); }, { passive: false });
+    document.addEventListener('keydown', e => { if (!document.getElementById('lightbox').classList.contains('active')) return; if (e.key === 'Escape') closeLightbox(); if (e.key === 'ArrowRight') navLightbox(1); if (e.key === 'ArrowLeft') navLightbox(-1); if (e.key === '+' || e.key === '=') zoomIn(); if (e.key === '-') zoomOut(); if (e.key === '0') resetZoom(); });
+</script>
+</body>
+</html>
